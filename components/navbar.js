@@ -21,7 +21,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-opacity-0 z-10">
+    <Disclosure as="nav" className="bg-transparent bg-opacity-70 absolute inset-x-0 top-0">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -41,8 +41,8 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                    alt="Workflow"
+                    src="https://res.cloudinary.com/annaga/image/upload/v1636486534/annaga-logo_du1dlj.png"
+                    alt="Annaga"
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
