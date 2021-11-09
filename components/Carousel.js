@@ -47,10 +47,10 @@ class Carousel extends Component {
   render() {
     return (
       <div className="m-0">
-        <div className="bg-red-700 w-screen h-screen flex overflow-hidden relative">
+        <div className="bg-red-900 w-screen h-screen flex overflow-hidden relative">
           <AiOutlineLeft
             onClick={this.prevSlide}
-            className="absolute left-0 text-3xl inset-y-1/2 text-white cursor-pointer"
+            className="m-2 absolute left-0 text-3xl inset-y-1/2 text-white cursor-pointer"
           />
 
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
@@ -79,7 +79,7 @@ class Carousel extends Component {
 
           <AiOutlineRight
             onClick={this.nextSlide}
-            className="absolute right-0 text-3xl inset-y-1/2 text-white cursor-pointer"
+            className="absolute m-2 right-0 text-3xl inset-y-1/2 text-white cursor-pointer"
           />
         </div>
       </div>

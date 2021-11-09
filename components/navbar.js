@@ -21,41 +21,36 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className=  "bg-transparent bg-opacity-70 absolute inset-x-0 top-0">
+    <Disclosure as="nav" className=  "bg-transparent absolute inset-x-0 top-0">
 
       {({ open }) => (
         <>
           <div className={classNames(
-        open ? 'bg-red-900' : '',
-        'max-w-7xl mx-auto px-2 sm:px-6 lg:px-8'
+        open ? 'bg-red-900' : 'bg-transparent',
+        'max-w-7xl mx-auto px-5 pt-1 md:px-8'
 
       )}>
 
 
             <div className="relative flex items-center justify-between h-16">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-900 hover:bg-opacity-70 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XIcon className="block h-7 w-7" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    <MenuIcon className="block h-7 w-7" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex-1 flex items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-auto"
+                  <a href="/"><img
+                    className="block h-8 md:h-9 w-auto"
                     src="https://res.cloudinary.com/annaga/image/upload/v1636486534/annaga-logo_du1dlj.png"
                     alt="Annaga"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                    alt="Workflow"
-                  />
+                  /></a>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
@@ -65,7 +60,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current ? ' ' : '',
-                          'text-white hover:bg-gray-900 hover:bg-opacity-70 hover:text-white px-3 py-2 rounded-md text-xl font-medium'
+                          'text-white hover:bg-gray-900 hover:bg-opacity-70 hover:text-white px-2 py-2 rounded-md text-xl font-medium md:text-2xl'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
