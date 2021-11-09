@@ -62,7 +62,7 @@ class Carousel extends Component {
                   key={index}
                   className={
                     index === this.state.currentSlide
-                      ? "block w-screen h-screen object-cover"
+                      ? "block w-screen h-full object-cover"
                       : "hidden"
                   }
                   onMouseEnter={() => {
