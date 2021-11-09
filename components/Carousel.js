@@ -56,6 +56,7 @@ class Carousel extends Component {
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
             {CarouselData.map((slide, index) => {
               return (
+                  <>
                 <img
                   src={slide.image}
                   alt="This is a carousel slide"
@@ -72,6 +73,28 @@ class Carousel extends Component {
                     this.setState({ paused: false });
                   }}
                 />
+
+
+    {/* 
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    text-align: center;
+    display: block!important; */}
+
+
+                <div
+                
+                className={
+                    index === this.state.currentSlide
+                      ? "absolute bg-yellow-700 z-10 py-6 text-white inset-x-0 bottom-0"
+                      : "hidden"
+                  }
+                >
+          <h5 className="text-7xl">{slide.title}</h5>
+          <div className="text-2xl">{slide.blurb}</div>
+        </div>
+        </>
               );
             })}
           </Swipe>
