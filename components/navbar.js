@@ -27,7 +27,7 @@ export default function Navbar() {
         <>
           <div className={classNames(
         open ? 'bg-red-900' : 'bg-transparent',
-        'max-w-7xl mx-auto px-5 pt-1 md:px-8'
+        'max-w-7xl mx-auto px-5 md:px-8'
 
       )}>
 
@@ -47,7 +47,7 @@ export default function Navbar() {
               <div className="flex-1 flex items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex-shrink-0 flex items-center">
                   <a href="/"><img
-                    className="block h-8 md:h-9 w-auto"
+                    className="block pt-1 h-8 md:h-9 w-auto"
                     src="https://res.cloudinary.com/annaga/image/upload/v1636486534/annaga-logo_du1dlj.png"
                     alt="Annaga"
                   /></a>

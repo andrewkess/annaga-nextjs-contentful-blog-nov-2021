@@ -87,12 +87,12 @@ class Carousel extends Component {
                 
                 className={
                     index === this.state.currentSlide
-                      ? "absolute bg-yellow-700 z-10 py-6 text-white inset-x-0 bottom-0"
+                      ? "absolute z-10 py-6 text-white inset-x-0 bottom-0"
                       : "hidden"
                   }
                 >
-          <h5 className="text-7xl">{slide.title}</h5>
-          <div className="text-2xl">{slide.blurb}</div>
+          <h5 className="text-7xl sm:text-8xl md:text-9xl px-8 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>{slide.title}</h5>
+          <div className="text-1xl sm:text-2xl md:text-3xl px-8 leading-none">{slide.blurb}</div>
         </div>
         </>
               );
