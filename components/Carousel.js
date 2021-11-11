@@ -118,7 +118,7 @@ style={{
 </div>
 
 
-<div className="text-xl font-medium sm:text-2xl md:text-2xl px-6 sm:px-8 md:px-12 pb-4">
+<div className="text-xl font-medium sm:text-2xl md:text-2xl px-6 sm:px-8 md:px-12 pb-4 pr-20">
 {slide.blurb}
 
 </div>
