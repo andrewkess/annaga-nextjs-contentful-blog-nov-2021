@@ -60,7 +60,7 @@ class Carousel extends Component {
         >
 
 <div className="h-min-full absolute inset-y-0 left-0 cursor-pointer" onClick={this.prevSlide}>
-            <BsChevronCompactLeft className="mx-1 text-6xl text-white relative inset-y-1/2" />
+            <BsChevronCompactLeft className="mx-1 sm:mx-6 text-6xl text-white relative inset-y-80" />
           </div>
 
 
@@ -91,7 +91,7 @@ class Carousel extends Component {
                     <div
                       className={
                         index === this.state.currentSlide
-                          ? 'absolute group z-10 py-6 text-white inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-gray-900 hover:bg-gray-900 hover:bg-opacity-30'
+                          ? 'absolute group z-10 py-6 text-white inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black hover:bg-black hover:bg-opacity-20'
                           : 'hidden'
                       }
                     >
@@ -119,7 +119,7 @@ class Carousel extends Component {
           </Swipe>
 
           <div className="h-min-full absolute inset-y-0 right-0 cursor-pointer" onClick={this.nextSlide}>
-            <BsChevronCompactRight className="mx-1 text-6xl text-white relative inset-y-1/2" />
+            <BsChevronCompactRight className="mx-1 sm:mx-6 text-6xl text-white relative inset-y-80" />
           </div>
         </div>
       </div>

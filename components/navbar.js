@@ -25,6 +25,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+
   return (
     <Disclosure as="nav" className=  "bg-transparent absolute inset-x-0 top-0 z-20">
 
@@ -37,10 +38,12 @@ export default function Navbar() {
       )}>
 
 
+
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-900 hover:bg-opacity-70 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-900 hover:bg-opacity-70 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-7 w-7" aria-hidden="true" />
@@ -80,8 +83,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="bg-gray-900 px-2 pt-2 pb-3 space-y-1 h-screen">
+          <Disclosure.Panel className="sm:hidden" >
+            <div className="bg-gray-900 px-2 pt-5 pb-3 space-y-1 h-screen text-center" >
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -89,9 +92,16 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current ? '' : '',
-                    'bg-gray-900 text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
+                    'bg-gray-900 text-5xl text-white hover:text-red-800 block px-3 py-1 rounded-md font-medium'
+                  )
+            
+                }
+                
+                style={{
+                  fontFamily: "'Bebas Neue', cursive",
+                }}
+
+                aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
