@@ -101,13 +101,18 @@ onMouseLeave={() => {
                 
                 className={
                     index === this.state.currentSlide
-                      ? "absolute group z-10 py-6 pt-16 text-white inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-gray-900"
+                      ? "absolute group z-10 py-6 text-white inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-gray-900"
                       : "hidden"
                   }
                 >
           
           
-<div className="text-6xl font-medium sm:text-8xl lg:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>          
+<div className="text-6xl font-medium sm:text-8xl lg:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none drop-shadow-lg" 
+style={{
+  
+  fontFamily: "'Bebas Neue', cursive",
+
+}}>          
 {slide.title}
 <FaAngleDoubleRight onClick={this.prevSlide} className="inline text-4xl font-medium sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 group-hover:text-white" />
 </div>
