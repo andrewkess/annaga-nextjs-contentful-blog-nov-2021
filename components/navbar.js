@@ -68,11 +68,9 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current ? ' ' : '',
-                          'text-white hover:bg-gray-900 hover:bg-opacity-60 hover:text-white px-2 py-2 rounded-md text-2xl font-medium md:text-3xl drop-shadow'
+                          'text-white hover:bg-gray-900 hover:bg-opacity-60 hover:text-white px-1 md:px-2 py-2 rounded-md text-2xl font-medium md:text-2xl drop-shadow'
                         )}
-                        style={{
-                          fontFamily: "'Bebas Neue', cursive",
-                        }}
+                     
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
