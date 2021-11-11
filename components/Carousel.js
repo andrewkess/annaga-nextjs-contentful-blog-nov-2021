@@ -60,7 +60,7 @@ class Carousel extends Component {
         >
 
 <div className="h-min-full absolute inset-y-0 left-0 cursor-pointer outline-none focus:outline-none" onClick={this.prevSlide} >
-            <BsChevronCompactLeft className="mx-1 sm:mx-6 text-6xl text-white relative inset-y-80" />
+            <BsChevronCompactLeft className="mx-1 sm:mx-6 text-6xl text-white relative inset-y-1/2" />
           </div>
 
 
@@ -119,7 +119,7 @@ class Carousel extends Component {
           </Swipe>
 
           <div className="h-min-full absolute inset-y-0 right-0 cursor-pointer" onClick={this.nextSlide}>
-            <BsChevronCompactRight className="mx-1 sm:mx-6 text-6xl text-white relative inset-y-80" />
+            <BsChevronCompactRight className="mx-1 sm:mx-6 text-6xl text-white relative inset-y-1/2" />
           </div>
         </div>
       </div>
