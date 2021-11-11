@@ -92,18 +92,19 @@ class Carousel extends Component {
     text-align: center;
     display: block!important; */}
 
-
+<a href="/">
                 <div
                 
                 className={
                     index === this.state.currentSlide
-                      ? "absolute z-10 py-6 text-white inset-x-0 bottom-0 bg-gray-900 bg-opacity-10 hover:bg-gray-900 hover:bg-opacity-70"
+                      ? "absolute z-10 py-6 text-white inset-x-0 bottom-0 hover:bg-gray-900 hover:bg-opacity-70"
                       : "hidden"
                   }
                 >
-          <h5 className="text-7xl font-medium sm:text-8xl md:text-9xl px-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>{slide.title}</h5>
+          <h5 className="text-7xl font-medium sm:text-8xl md:text-9xl pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>{slide.title}</h5>
           <div className="text-xl font-medium sm:text-2xl md:text-3xl px-10">{slide.blurb}</div>
         </div>
+        </a>
         </>
               );
             })}
