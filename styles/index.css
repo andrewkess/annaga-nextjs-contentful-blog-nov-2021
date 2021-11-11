@@ -3,3 +3,12 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+@layer base {
+    * {
+     -webkit-tap-highlight-color: transparent;
+    }
+    /* body {
+        background-color: aqua;
+    } */
+  }
