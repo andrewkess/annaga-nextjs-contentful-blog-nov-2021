@@ -101,13 +101,13 @@ onMouseLeave={() => {
                 
                 className={
                     index === this.state.currentSlide
-                      ? "absolute group z-10 py-6 text-white inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-gray-900"
+                      ? "absolute group z-10 py-6 text-white inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-gray-900 hover:bg-gray-900 hover:bg-opacity-30"
                       : "hidden"
                   }
                 >
           
           
-<div className="text-6xl font-medium sm:text-8xl lg:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none drop-shadow-lg" 
+<div className="text-6xl font-medium sm:text-8xl lg:text-9xl pl-6 sm:pl-8 md:pl-12 leading-none drop-shadow-lg" 
 style={{
   
   fontFamily: "'Bebas Neue', cursive",
@@ -118,7 +118,7 @@ style={{
 </div>
 
 
-<div className="text-lg font-medium sm:text-1xl md:text-2xl px-4 sm:px-6 md:px-10">
+<div className="text-xl font-medium sm:text-2xl md:text-2xl px-6 sm:px-8 md:px-12 pb-4">
 {slide.blurb}
 
 </div>
