@@ -8,21 +8,21 @@ export const CarouselData = [
     {
       image:
         "https://res.cloudinary.com/annaga/image/upload/v1636486535/king-keyframe_dretwk.jpg",
-        title: "Next destination",
-        blurb: "Fun that's as explosively bright and provocative as ever."
+        title: "Penguin bloom",
+        blurb: "Graceful comment on timely sociopolitical themes."
 
     },
     {
       image:
         "https://res.cloudinary.com/annaga/image/upload/v1636486536/minari-keyframe_fhhkox.jpg",
-        title: "Law of desire",
-        blurb: "Fun that's as explosively bright and provocative as ever."
+        title: "Never ending story",
+        blurb: "A magical journey about the power of imagination."
     },
     {
       image:
         "https://res.cloudinary.com/annaga/image/upload/v1636486537/bear_gsipdp.jpg",
-        title: "Law of desire",
-        blurb: "Fun that's as explosively bright and provocative as ever."
+        title: "Bears and cubs",
+        blurb: "When have you ever seen a more gorgeous bear in the world?"
 
     },
   ];
