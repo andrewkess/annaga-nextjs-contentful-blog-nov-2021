@@ -27,13 +27,13 @@ function classNames(...classes) {
 export default function Navbar() {
 
   return (
-    <Disclosure as="nav" className=  "bg-transparent absolute inset-x-0 top-0 z-20">
+    <Disclosure as="nav" className=  "absolute inset-x-0 top-0 z-20">
 
       {({ open }) => (
         <>
           <div className={classNames(
         open ? 'bg-red-900' : 'bg-transparent',
-        'max-w-7xl mx-auto px-5 md:px-8'
+        'max-w-7xl mx-auto px-5 pt-2 md:px-6 md:pt-3'
 
       )}>
 
@@ -68,8 +68,11 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current ? ' ' : '',
-                          'text-white hover:bg-gray-900 hover:bg-opacity-60 hover:text-white px-2 py-2 rounded-md text-xl font-medium md:text-2xl drop-shadow'
+                          'text-white hover:bg-gray-900 hover:bg-opacity-60 hover:text-white px-2 py-2 rounded-md text-2xl font-medium md:text-3xl drop-shadow'
                         )}
+                        style={{
+                          fontFamily: "'Bebas Neue', cursive",
+                        }}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
