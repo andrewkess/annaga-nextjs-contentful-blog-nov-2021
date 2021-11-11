@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { CarouselData } from "./CarouselData";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import { FaLocationArrow } from "react-icons/fa";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 import Swipe from "react-easy-swipe";
 
@@ -101,15 +101,15 @@ onMouseLeave={() => {
                 
                 className={
                     index === this.state.currentSlide
-                      ? "absolute z-10 py-6 text-white inset-x-0 bottom-0 hover:bg-gray-900 hover:bg-opacity-70"
+                      ? "absolute group z-10 py-6 text-white inset-x-0 bottom-0 hover:bg-gray-900 hover:bg-opacity-60"
                       : "hidden"
                   }
                 >
           
           
-<div className="text-7xl font-medium sm:text-8xl lg:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>          
+<div className="text-6xl font-medium sm:text-8xl lg:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>          
 {slide.title}
-<FaLocationArrow onClick={this.prevSlide} className="inline text-4xl font-medium sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 hover:text-white" />
+<FaAngleDoubleRight onClick={this.prevSlide} className="inline text-4xl font-medium sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 group-hover:text-white" />
 </div>
 
 

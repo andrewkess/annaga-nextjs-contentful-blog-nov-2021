@@ -7,6 +7,11 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 // import { TiSocialInstagram } from 'react-icons/ti'
 // import { VscTwitter } from 'react-icons/vsc'
 
+//import { FaBars } from 'react-icons/fa'
+
+
+
+
 
 const navigation = [
   { name: 'About', href: '#', current: true },
@@ -60,7 +65,7 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current ? ' ' : '',
-                          'text-white hover:bg-gray-900 hover:bg-opacity-70 hover:text-white px-2 py-2 rounded-md text-xl font-medium md:text-2xl'
+                          'text-white hover:bg-gray-900 hover:bg-opacity-60 hover:text-white px-2 py-2 rounded-md text-xl font-medium md:text-2xl'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
