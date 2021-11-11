@@ -101,7 +101,7 @@ onMouseLeave={() => {
                 
                 className={
                     index === this.state.currentSlide
-                      ? "absolute group z-10 py-6 text-white inset-x-0 bottom-0 hover:bg-gray-900 hover:bg-opacity-60"
+                      ? "absolute group z-10 py-6 pt-16 text-white inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-gray-900"
                       : "hidden"
                   }
                 >
