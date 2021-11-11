@@ -22,7 +22,7 @@ export const CarouselData = [
       image:
         "https://res.cloudinary.com/annaga/image/upload/v1636486537/bear_gsipdp.jpg",
         title: "Bears and cubs",
-        blurb: "When have you ever seen a more gorgeous bear in the world?"
+        blurb: "Where have you seen a more gorgeous bear in the world?"
 
     },
   ];

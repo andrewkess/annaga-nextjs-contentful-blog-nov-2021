@@ -107,13 +107,13 @@ onMouseLeave={() => {
                 >
           
           
-<div className="text-7xl font-medium sm:text-8xl lg:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>          
+<div className="text-6xl font-medium sm:text-8xl lg:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>          
 {slide.title}
-<FaLocationArrow onClick={this.prevSlide} className="inline text-5xl font-medium sm:text-6xl md:text-7xl ml-4 sm:ml-6 md:ml-10 leading-none text-white text-opacity-25 hover:text-white" />
+<FaLocationArrow onClick={this.prevSlide} className="inline text-4xl font-medium sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 hover:text-white" />
 </div>
 
 
-<div className="text-xl font-medium sm:text-2xl md:text-3xl px-4 sm:px-6 md:px-10">
+<div className="text-lg font-medium sm:text-1xl md:text-2xl px-4 sm:px-6 md:px-10">
 {slide.blurb}
 
 </div>
