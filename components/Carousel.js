@@ -59,7 +59,7 @@ class Carousel extends Component {
           }}
         >
 
-<div className="h-min-full absolute inset-y-0 left-0 cursor-pointer" onClick={this.prevSlide}>
+<div className="h-min-full absolute inset-y-0 left-0 cursor-pointer focus:outline-none" onClick={this.prevSlide}>
             <BsChevronCompactLeft className="mx-1 sm:mx-6 text-6xl text-white relative inset-y-80" />
           </div>
 
