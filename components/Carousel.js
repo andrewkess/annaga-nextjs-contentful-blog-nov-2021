@@ -101,8 +101,8 @@ class Carousel extends Component {
                       : "hidden"
                   }
                 >
-          <h5 className="text-7xl font-medium sm:text-8xl md:text-9xl pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>{slide.title}</h5>
-          <div className="text-xl font-medium sm:text-2xl md:text-3xl px-10">{slide.blurb}</div>
+          <h5 className="text-7xl font-medium sm:text-8xl md:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>{slide.title}</h5>
+          <div className="text-xl font-medium sm:text-2xl md:text-3xl px-4 sm:px-6 md:px-10">{slide.blurb}</div>
         </div>
         </a>
         </>
