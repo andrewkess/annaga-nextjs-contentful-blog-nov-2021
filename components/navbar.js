@@ -21,7 +21,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className=  "bg-transparent absolute inset-x-0 top-0  z-20">
+    <Disclosure as="nav" className=  "bg-transparent absolute inset-x-0 top-0 z-20">
 
       {({ open }) => (
         <>
