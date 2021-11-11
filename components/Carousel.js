@@ -107,7 +107,7 @@ onMouseLeave={() => {
                 >
           
           
-<div className="text-6xl font-medium sm:text-8xl lg:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>          
+<div className="text-7xl font-medium sm:text-8xl lg:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>          
 {slide.title}
 <FaLocationArrow onClick={this.prevSlide} className="inline text-4xl font-medium sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 hover:text-white" />
 </div>
