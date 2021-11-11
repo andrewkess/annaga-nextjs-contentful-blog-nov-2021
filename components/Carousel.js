@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { CarouselData } from './CarouselData';
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import { FaAngleDoubleRight } from 'react-icons/fa';
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+
 
 import Swipe from 'react-easy-swipe';
 
@@ -58,10 +59,10 @@ class Carousel extends Component {
           }}
         >
 
-            <AiOutlineLeft
-              onClick={this.prevSlide}
-              className="absolute m-2 text-3xl inset-y-1/2 text-white cursor-pointer"
-            />
+<div className="h-min-full absolute inset-y-0 left-0 cursor-pointer" onClick={this.prevSlide}>
+            <BsChevronCompactLeft className="mx-1 text-6xl text-white relative inset-y-1/2" />
+          </div>
+
 
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
             {CarouselData.map((slide, index) => {
@@ -117,11 +118,8 @@ class Carousel extends Component {
             })}
           </Swipe>
 
-          <div className="h-min-full absolute inset-y-0 right-0 bg-green-900 cursor-pointer" onClick={this.nextSlide}>
-            <AiOutlineRight
-              
-              className="m-2 text-3xl text-white relative inset-y-1/2"
-            />
+          <div className="h-min-full absolute inset-y-0 right-0 cursor-pointer" onClick={this.nextSlide}>
+            <BsChevronCompactRight className="mx-1 text-6xl text-white relative inset-y-1/2" />
           </div>
         </div>
       </div>
