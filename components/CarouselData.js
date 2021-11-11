@@ -15,7 +15,7 @@ export const CarouselData = [
     {
       image:
         "https://res.cloudinary.com/annaga/image/upload/v1636486536/minari-keyframe_fhhkox.jpg",
-        title: "Never ending story",
+        title: "Desert Storm story",
         blurb: "A magical journey about the power of imagination."
     },
     {

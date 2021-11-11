@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { CarouselData } from "./CarouselData";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { FaLocationArrow } from "react-icons/fa";
+
 import Swipe from "react-easy-swipe";
 
 class Carousel extends Component {
@@ -21,7 +23,7 @@ class Carousel extends Component {
             : this.state.currentSlide + 1;
         this.setState({ currentSlide: newSlide });
       }
-    }, 3000);
+    }, 4000);
   }
 
   nextSlide = () => {
@@ -76,23 +78,25 @@ class Carousel extends Component {
                       ? "block w-screen h-full object-cover"
                       : "hidden"
                   }
-                  onMouseEnter={() => {
-                    this.setState({ paused: true });
-                  }}
-                  onMouseLeave={() => {
-                    this.setState({ paused: false });
-                  }}
+
+
+
                 />
 
 
-    {/* 
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    text-align: center;
-    display: block!important; */}
 
-<a href="/">
+
+<a href="/"
+
+onMouseEnter={() => {
+  this.setState({ paused: true });
+}}
+onMouseLeave={() => {
+  this.setState({ paused: false });
+}}
+
+
+>
                 <div
                 
                 className={
@@ -101,9 +105,24 @@ class Carousel extends Component {
                       : "hidden"
                   }
                 >
-          <h5 className="text-7xl font-medium sm:text-8xl md:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>{slide.title}</h5>
-          <div className="text-xl font-medium sm:text-2xl md:text-3xl px-4 sm:px-6 md:px-10">{slide.blurb}</div>
+          
+          
+<div className="text-7xl font-medium sm:text-8xl lg:text-9xl pl-4 sm:pl-6 md:pl-10 leading-none" style={{fontFamily: "'Bebas Neue', cursive"}}>          
+{slide.title}
+<FaLocationArrow onClick={this.prevSlide} className="inline text-5xl font-medium sm:text-6xl md:text-7xl ml-4 sm:ml-6 md:ml-10 leading-none text-white text-opacity-25 hover:text-white" />
+</div>
+
+
+<div className="text-xl font-medium sm:text-2xl md:text-3xl px-4 sm:px-6 md:px-10">
+{slide.blurb}
+
+</div>
+          
+ 
         </div>
+
+  
+
         </a>
         </>
               );
