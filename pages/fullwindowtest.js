@@ -8,14 +8,21 @@ import { CMS_NAME } from '../lib/constants'
 
 
 
-function appHeight() {
-    const doc = document.documentElement
-    doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
+
+
+
+  if (typeof window !== "undefined") {
+    // browser code
+
+    function appHeight() {
+        const doc = document.documentElement
+        doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
+      }
+    
+      window.addEventListener('resize', appHeight);
+      appHeight();
+
   }
-
-  window.addEventListener('resize', appHeight);
-  appHeight();
-
 
 
 export default function FullWindow() {
@@ -30,7 +37,7 @@ export default function FullWindow() {
           <title>Full window test {CMS_NAME}</title>
         </Head>
         <div className="m-0">
-        <div className="bg-red-900 w-screen h-screen flex overflow-hidden relative"
+        <div className="bg-red-900 w-screen flex overflow-hidden relative"
         
         style={{
             height: '100vh', /* Fallback for browsers that do not support Custom Properties */
