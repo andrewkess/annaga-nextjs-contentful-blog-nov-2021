@@ -3,9 +3,6 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
-// import { FaVimeoV } from 'react-icons/fa'
-// import { TiSocialInstagram } from 'react-icons/ti'
-// import { VscTwitter } from 'react-icons/vsc'
 
 //import { FaBars } from 'react-icons/fa'
 
@@ -17,7 +14,7 @@ const navigation = [
   { name: 'About', href: '#', current: true },
   { name: 'Projects', href: '#', current: false },
   { name: 'Jobs', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'Contact', href: 'contact', current: false },
 ]
 
 function classNames(...classes) {
