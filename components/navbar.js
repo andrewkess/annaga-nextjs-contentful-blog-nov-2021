@@ -24,13 +24,13 @@ function classNames(...classes) {
 export default function Navbar() {
 
   return (
-    <Disclosure as="nav" className=  "absolute inset-x-0 top-0 z-20">
+    <Disclosure as="nav" className=  "absolute inset-x-0 top-0 z-20 sm:px-6">
 
       {({ open }) => (
         <>
           <div className={classNames(
         open ? 'bg-red-900' : 'bg-transparent',
-        'max-w-7xl mx-auto px-5 pt-2 md:px-6 md:pt-3'
+        'mx-auto p-5 md:p-5 lg:p-5'
 
       )}>
 

@@ -117,7 +117,7 @@ export default function Contact() {
                   </defs>
                 </svg>
               </div>
-              <h3 className="text-3xl lg:text-4xl pt-16 font-medium text-white"
+              <h3 className="text-3xl lg:text-4xl pt-14 sm:pt-16 md:pt-16 font-medium text-white"
               
               style={{
                 fontFamily: "'Roboto', sans-serif" 
@@ -148,7 +148,7 @@ export default function Contact() {
 
             {/* Contact form */}
             <div className="py-10 px-6 sm:px-12 xl:p-14 lg:col-span-2 bg-gray-100">
-              <h3 className="text-2xl lg:text-3xl lg:pt-16 font-medium text-gray-900"
+              <h3 className="text-2xl lg:text-3xl pt-3 sm:pt-5 md:pt-16 font-medium text-main-primary"
                 style={{
                     fontFamily: "'Roboto', sans-serif" 
                              }}

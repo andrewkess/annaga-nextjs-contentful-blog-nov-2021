@@ -160,8 +160,13 @@ export default function Contact() {
                 </svg>
               </div>
 
-                      <h1 className="text-2xl pt-20 font-extrabold tracking-tight text-white sm:text-3xl lg:text-5xl">About Us</h1>
-
+              <h3 className="text-3xl lg:text-4xl pt-14 sm:pt-16 md:pt-16 font-medium text-white"
+              
+              style={{
+                fontFamily: "'Roboto', sans-serif" 
+                         }}
+              
+              >About us</h3>
               <p className="mt-6 text-2xl text-base text-gray-200 max-w-3xl">
                 Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
                 lacus arcu.
