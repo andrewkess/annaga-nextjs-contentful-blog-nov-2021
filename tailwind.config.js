@@ -1,3 +1,6 @@
+// tailwind.config.js
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -10,6 +13,8 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        'main-primary': '#240001',
+        'main-secondary': colors.red[900]
       },
       spacing: {
         28: '7rem',
