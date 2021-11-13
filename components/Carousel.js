@@ -96,7 +96,7 @@ class Carousel extends Component {
                       }
                     >
                       <div
-                        className="text-7xl font-medium sm:text-8xl lg:text-9xl pl-6 sm:pl-8 md:pl-12 leading-none drop-shadow-lg"
+                        className="text-7xl font-medium sm:text-8xl lg:text-9xl pl-6 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-20 leading-none drop-shadow-lg"
                         style={{
                           fontFamily: "'Bebas Neue', cursive",
                         }}
@@ -108,7 +108,7 @@ class Carousel extends Component {
                         />
                       </div>
 
-                      <div className="text-xl font-medium sm:text-2xl md:text-2xl px-6 sm:px-8 md:px-12 pb-4 pr-18">
+                      <div className="text-xl font-medium sm:text-2xl md:text-2xl px-6 sm:px-8 md:px-12 lg:px-16 xl:pl-20   pb-4 pr-18">
                         {slide.blurb}
                       </div>
                     </div>

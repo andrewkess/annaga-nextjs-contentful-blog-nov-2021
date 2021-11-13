@@ -1,4 +1,4 @@
-import AboutBar from '../components/team'
+import AboutBar from '../components/team-v2'
 import Navbar from '../components/navbar'
 import Layout from '../components/layout'
 import Head from 'next/head'

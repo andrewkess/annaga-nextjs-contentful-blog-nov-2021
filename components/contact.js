@@ -14,13 +14,13 @@ export default function Contact() {
 
 
     <div className="bg-gray-100">
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto">
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact us</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-3">
             {/* Contact information */}
-            <div className="relative overflow-hidden py-10 px-6 bg-main-primary sm:px-10 xl:p-12">
+            <div className="relative overflow-hidden bg-main-primary py-10 px-6 sm:px-12 xl:p-14">
               <div className="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                 <svg
                   className="absolute inset-0 w-full h-full"
@@ -117,8 +117,14 @@ export default function Contact() {
                   </defs>
                 </svg>
               </div>
-              <h3 className="text-lg pt-16 font-medium text-white">Contact information</h3>
-              <p className="mt-6 text-base text-indigo-50 max-w-3xl">
+              <h3 className="text-3xl lg:text-4xl pt-16 font-medium text-white"
+              
+              style={{
+                fontFamily: "'Roboto', sans-serif" 
+                         }}
+              
+              >Contact us</h3>
+              <p className="mt-6 text-base text-gray-200 max-w-3xl">
                 Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
                 lacus arcu.
               </p>
@@ -126,23 +132,27 @@ export default function Contact() {
                 <dt>
                   <span className="sr-only">Phone number</span>
                 </dt>
-                <dd className="flex text-base text-indigo-50">
-                  <PhoneIcon className="flex-shrink-0 w-6 h-6 text-indigo-200" aria-hidden="true" />
+                <dd className="flex text-base text-gray-200">
+                  <PhoneIcon className="flex-shrink-0 w-6 h-6 text-main-salmon" aria-hidden="true" />
                   <span className="ml-3">+1 (555) 123-4567</span>
                 </dd>
                 <dt>
                   <span className="sr-only">Email</span>
                 </dt>
-                <dd className="flex text-base text-indigo-50">
-                  <MailIcon className="flex-shrink-0 w-6 h-6 text-indigo-200" aria-hidden="true" />
-                  <span className="ml-3">support@workcation.com</span>
+                <dd className="flex text-base text-red-50">
+                  <MailIcon className="flex-shrink-0 w-6 h-6 text-main-salmon" aria-hidden="true" />
+                  <span className="ml-3">annaga.productions@gmail.com</span>
                 </dd>
               </dl>
              </div>
 
             {/* Contact form */}
-            <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-              <h3 className="text-lg lg:pt-16 font-medium text-gray-900">Send us a message</h3>
+            <div className="py-10 px-6 sm:px-12 xl:p-14 lg:col-span-2 bg-gray-100">
+              <h3 className="text-2xl lg:text-3xl lg:pt-16 font-medium text-gray-900"
+                style={{
+                    fontFamily: "'Roboto', sans-serif" 
+                             }}
+              >Send us a message</h3>
               <form action="#" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                 <div>
                   <label htmlFor="first-name" className="block text-sm font-medium text-gray-900">
@@ -154,7 +164,7 @@ export default function Contact() {
                       name="first-name"
                       id="first-name"
                       autoComplete="given-name"
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -168,7 +178,7 @@ export default function Contact() {
                       name="last-name"
                       id="last-name"
                       autoComplete="family-name"
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -182,7 +192,7 @@ export default function Contact() {
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -201,7 +211,7 @@ export default function Contact() {
                       name="phone"
                       id="phone"
                       autoComplete="tel"
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border-gray-300 rounded-md"
                       aria-describedby="phone-optional"
                     />
                   </div>
@@ -215,7 +225,7 @@ export default function Contact() {
                       type="text"
                       name="subject"
                       id="subject"
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border-gray-300 rounded-md"
                     />
                   </div>
                 </div>
@@ -233,7 +243,7 @@ export default function Contact() {
                       id="message"
                       name="message"
                       rows={4}
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border border-gray-300 rounded-md"
                       aria-describedby="message-max"
                       defaultValue={''}
                     />
@@ -242,7 +252,7 @@ export default function Contact() {
                 <div className="sm:col-span-2 sm:flex sm:justify-end">
                   <button
                     type="submit"
-                    className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-main-primary hover:bg-main-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto"
+                    className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-main-primary hover:bg-main-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-main-primary sm:w-auto"
                   >
                     Send
                   </button>
