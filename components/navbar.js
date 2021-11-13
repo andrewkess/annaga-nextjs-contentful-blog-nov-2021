@@ -39,7 +39,7 @@ export default function Navbar() {
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-900 hover:bg-opacity-60 md:bg-red-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white lg:bg-gray-900 lg:bg-opacity-60 hover:text-white hover:bg-gray-900 hover:bg-opacity-60 lg:hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
