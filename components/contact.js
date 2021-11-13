@@ -10,17 +10,6 @@ export default function Contact() {
   return (
     <>
 
-      <div className="absolute inset-0">
-       
-        <div className="absolute inset-0 bg-red-900" aria-hidden="true" />
-      </div>
-      <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Get in touch</h1>
-        <p className="mt-6 text-xl text-indigo-100 max-w-3xl">
-          Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque lacus nisi urna, arcu sociis eu. Orci vel
-          lectus nisl eget eget ut consectetur. Sit justo viverra non adipisicing elit distinctio.
-        </p>
-      </div>
 
 
 
@@ -31,7 +20,7 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3">
             {/* Contact information */}
-            <div className="relative overflow-hidden py-10 px-6 bg-pink-900 sm:px-10 xl:p-12">
+            <div className="relative overflow-hidden py-10 px-6 bg-red-900 sm:px-10 xl:p-12">
               <div className="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                 <svg
                   className="absolute inset-0 w-full h-full"

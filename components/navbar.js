@@ -11,7 +11,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 
 const navigation = [
-  { name: 'About', href: 'about', current: true },
+  { name: 'About', href: 'about', current: false },
   { name: 'Projects', href: 'projects', current: false },
   { name: 'Jobs', href: 'jobs', current: false },
   { name: 'Contact', href: 'contact', current: false },
@@ -37,9 +37,9 @@ export default function Navbar() {
 
 
             <div className="relative flex items-center justify-between h-16">
-              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-900 hover:bg-opacity-70 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-900 hover:bg-opacity-60 md:bg-red-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -57,31 +57,15 @@ export default function Navbar() {
                     alt="Annaga"
                   /></a>
                 </div>
-                <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? ' ' : '',
-                          'text-white hover:bg-gray-900 hover:bg-opacity-60 hover:text-white px-1 md:px-2 py-2 rounded-md text-2xl font-medium md:text-2xl drop-shadow'
-                        )}
-                     
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
+                <div className="hidden sm:ml-6">
+                 </div>
               </div>
       
 
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden" >
+          <Disclosure.Panel className="" >
             <div className="bg-gray-900 px-2 pt-5 pb-3 space-y-1 h-screen text-center" >
               {navigation.map((item) => (
                 <Disclosure.Button
