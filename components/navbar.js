@@ -68,11 +68,11 @@ export default function Navbar() {
           </div>
           <Transition
         enter="transition duration-100 ease-out"
-        enterFrom="transform scale-95 opacity-0"
+        enterFrom="transform scale-100 opacity-0"
         enterTo="transform scale-100 opacity-100"
         leave="transition duration-75 ease-out"
         leaveFrom="transform scale-100 opacity-100"
-        leaveTo="transform scale-95 opacity-0"
+        leaveTo="transform scale-100 opacity-0"
       >
           <Disclosure.Panel className="absolute inset-x-0 top-0 h-screen bg-main-primary" >
             <div className="px-2 pt-32 pb-3 space-y-1 text-center" >
