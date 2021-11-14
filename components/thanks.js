@@ -22,7 +22,16 @@ export default function Team() {
 
           <div className="grid grid-cols-1">
             {/* Contact information */}
-            <div className="relative overflow-hidden bg-main-primary min-h-screen py-10 px-6 sm:px-12 xl:p-14 pb-14 sm:pb-16">
+            <div className="relative overflow-hidden bg-main-primary h-screen w-screen py-10 px-6 sm:px-12 xl:p-14 pb-14 sm:pb-16"
+            
+            style={{
+                height:
+                  '100vh' /* Fallback for browsers that do not support Custom Properties */,
+                height: 'calc(var(--vh, 1vh) * 100)',
+              }}
+           
+
+            >
               <div className="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                 <svg
                   className="absolute inset-0 w-full h-full"
