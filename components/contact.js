@@ -20,7 +20,7 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3">
             {/* Contact information */}
-            <div className="relative overflow-hidden bg-main-primary py-10 px-6 sm:px-12 xl:p-14">
+            <div className="relative overflow-hidden bg-main-primary py-10 px-6 sm:px-12 xl:p-14 pb-14 sm:pb-16">
               <div className="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                 <svg
                   className="absolute inset-0 w-full h-full"
