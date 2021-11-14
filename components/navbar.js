@@ -2,6 +2,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link';
 
 
 //import { FaBars } from 'react-icons/fa'
@@ -28,8 +29,9 @@ export default function Navbar() {
 
       {({ open }) => (
         <>
+
           <div className={classNames(
-        open ? 'bg-main-primary' : 'bg-transparent',
+        open ? 'bg-transparent' : 'bg-transparent',
         ' mx-auto p-6 md:p-6 lg:p-6'
 
       )}>
@@ -43,14 +45,14 @@ export default function Navbar() {
                 >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-7 w-7 hover:text-main-salmon lg:hover:text-white" aria-hidden="true" />
+                    <XIcon className="block h-7 w-7 hover:text-main-salmon lg:hover:text-white z-50" aria-hidden="true" />
                   ) : (
                     <MenuIcon className="block h-7 w-7" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-start sm:items-stretch sm:justify-between">
-                <div className="flex-shrink-0 flex items-center">
+                <div className="flex-shrink-0 flex items-center z-50">
                   <a href="/" key="testwindow"><img
                     className="block pt-1 h-8 md:h-9 w-auto"
                     src="https://res.cloudinary.com/annaga/image/upload/v1636486534/annaga-logo_du1dlj.png"
@@ -64,9 +66,16 @@ export default function Navbar() {
 
             </div>
           </div>
-
-          <Disclosure.Panel className="" >
-            <div className="bg-main-primary px-2 pt-5 pb-3 space-y-1 h-screen text-center" >
+          <Transition
+        enter="transition duration-100 ease-out"
+        enterFrom="transform scale-95 opacity-0"
+        enterTo="transform scale-100 opacity-100"
+        leave="transition duration-75 ease-out"
+        leaveFrom="transform scale-100 opacity-100"
+        leaveTo="transform scale-95 opacity-0"
+      >
+          <Disclosure.Panel className="absolute inset-x-0 top-0 h-screen bg-main-primary" >
+            <div className="px-2 pt-32 pb-3 space-y-1 text-center" >
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -90,6 +99,7 @@ export default function Navbar() {
               ))}
             </div>
           </Disclosure.Panel>
+          </Transition>
         </>
       )}
     </Disclosure>
