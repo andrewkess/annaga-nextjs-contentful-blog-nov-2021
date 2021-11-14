@@ -148,7 +148,7 @@ export default function Contact() {
 
             {/* Contact form */}
             <div className="py-10 px-6 sm:px-12 xl:p-14 lg:col-span-2 bg-gray-50">
-              <h3 className="text-2xl lg:text-3xl pt-3 sm:pt-5 lg:pt-20 font-medium text-main-primary"
+              <h3 className="text-2xl lg:text-2xl pt-3 sm:pt-5 lg:pt-20 font-medium text-main-primary"
                 style={{
                     fontFamily: "'Roboto', sans-serif" 
                              }}
