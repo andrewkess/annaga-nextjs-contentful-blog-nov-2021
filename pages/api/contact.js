@@ -21,7 +21,18 @@ export default async (req, res) => {
     html: message.replace(/\r\n/g, '<br />'),
   };
 
-  await mail.send(data);
 
-  res.status(200).json({ status: 'OK' });
+//   res.status(200).json({ status: 'OK' });
+//await mail.send(data)
+res.redirect(307, '/')
+
+//res.redirect(200, '/thankyou')
+
+// try {
+//     await mail.send(data)
+//     res.redirect(307, '../thankyou')
+//   } catch (err) {
+//     res.status(500).send({ error: 'failed to fetch data' })
+//   }
+
 };
