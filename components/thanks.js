@@ -22,7 +22,7 @@ export default function Team() {
 
           <div className="grid grid-cols-1">
             {/* Contact information */}
-            <div className="relative overflow-hidden bg-main-primary min-h-screen h-screen w-screen py-10 px-6 sm:px-12 xl:p-14 pb-14 sm:pb-16"
+            <div className="relative overflow-hidden bg-main-primary h-screen w-screen py-10 px-6 sm:px-12 xl:p-14 pb-14 sm:pb-16"
             
             style={{
                 height:
