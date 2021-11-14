@@ -30,13 +30,7 @@ export default function Navbar() {
       {({ open }) => (
         <>
 
-          <div className={classNames(
-        open ? 'bg-transparent' : 'bg-transparent',
-        ' mx-auto p-6 md:p-6 lg:p-6'
-
-      )}>
-
-
+          <div className="mx-auto p-6">
 
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center">
