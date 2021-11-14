@@ -21,7 +21,7 @@ const people = [
         linkedinUrl: '#',
       },
       {
-        name: 'Juan Pablo Domenech',
+        name: 'Juan Pablo Domenech2',
         role: 'Director',
         imageUrl:
           'https://res.cloudinary.com/annaga/image/upload/v1636733067/image-w856_pdmbk9.jpg',
@@ -29,7 +29,7 @@ const people = [
         linkedinUrl: '#',
       },
       {
-        name: 'Juan Pablo Domenech',
+        name: 'Juan Pablo Domenech3',
         role: 'Director',
         imageUrl:
           'https://res.cloudinary.com/annaga/image/upload/v1636733067/image-w856_pdmbk9.jpg',
@@ -37,7 +37,7 @@ const people = [
         linkedinUrl: '#',
       },
       {
-        name: 'Juan Pablo Domenech',
+        name: 'Juan Pablo Domenech4',
         role: 'Director',
         imageUrl:
           'https://res.cloudinary.com/annaga/image/upload/v1636733067/image-w856_pdmbk9.jpg',

@@ -67,11 +67,10 @@ class Carousel extends Component {
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
             {CarouselData.map((slide, index) => {
               return (
-                <>
+                <React.Fragment key={index}>
                   <img
                     src={slide.image}
                     alt="This is a carousel slide"
-                    key={index}
                     className={
                       index === this.state.currentSlide
                         ? 'block w-screen h-full object-cover'
@@ -113,7 +112,7 @@ class Carousel extends Component {
                       </div>
                     </div>
                   </a>
-                </>
+                </React.Fragment>
               );
             })}
           </Swipe>

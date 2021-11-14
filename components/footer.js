@@ -1,6 +1,6 @@
 // import Container from './container'
 // import { EXAMPLE_PATH } from '../lib/constants'
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
+//import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 
 import { FaVimeoV } from 'react-icons/fa';
 import { TiSocialInstagram } from 'react-icons/ti';
@@ -10,10 +10,10 @@ import Link from 'next/link';
 export default function Footer() {
   const navigation = {
     main: [
-      { name: 'About', href: 'about' },
-      { name: 'Projects', href: 'projects' },
-      { name: 'Jobs', href: 'jobs' },
-      { name: 'Contact', href: 'contact' },
+      { name: 'About', href: '/about' },
+      { name: 'Projects', href: '/projects' },
+      { name: 'Jobs', href: '/jobs' },
+      { name: 'Contact', href: '/contact' },
     ],
     social: [
       {

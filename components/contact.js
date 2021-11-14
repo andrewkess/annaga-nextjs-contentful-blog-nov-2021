@@ -1,11 +1,39 @@
 // import Container from './container'
 // import { EXAMPLE_PATH } from '../lib/constants'
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import { useState } from 'react';
 
 
 
 
 export default function Contact() {
+
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+  
+    const handleSubmit = e => {
+      e.preventDefault();
+      const data = {
+        firstName,
+        lastName,
+        email,
+        phone,
+        subject,
+        message,
+      };
+//      console.log(data);
+
+      fetch('/api/contact', {
+        method: 'post',
+        body: JSON.stringify(data),
+      });
+
+
+    };
 
   return (
     <>
@@ -153,7 +181,7 @@ export default function Contact() {
                     fontFamily: "'Roboto', sans-serif" 
                              }}
               >Send us a message</h3>
-              <form action="#" method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+              <form onSubmit={handleSubmit} className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                 <div>
                   <label htmlFor="first-name" className="block text-sm font-medium text-gray-900">
                     First name
@@ -165,7 +193,8 @@ export default function Contact() {
                       id="first-name"
                       autoComplete="given-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border-gray-300 rounded-md"
-                    />
+                      onChange={e => setFirstName(e.target.value)}
+                      />
                   </div>
                 </div>
                 <div>
@@ -179,7 +208,9 @@ export default function Contact() {
                       id="last-name"
                       autoComplete="family-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border-gray-300 rounded-md"
-                    />
+                      onChange={e => setLastName(e.target.value)}
+
+                   />
                   </div>
                 </div>
                 <div>
@@ -193,6 +224,8 @@ export default function Contact() {
                       type="email"
                       autoComplete="email"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border-gray-300 rounded-md"
+                      onChange={e => setEmail(e.target.value)}
+
                     />
                   </div>
                 </div>
@@ -213,6 +246,8 @@ export default function Contact() {
                       autoComplete="tel"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border-gray-300 rounded-md"
                       aria-describedby="phone-optional"
+                      onChange={e => setPhone(e.target.value)}
+
                     />
                   </div>
                 </div>
@@ -226,6 +261,8 @@ export default function Contact() {
                       name="subject"
                       id="subject"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border-gray-300 rounded-md"
+                      onChange={e => setSubject(e.target.value)}
+
                     />
                   </div>
                 </div>
@@ -246,6 +283,8 @@ export default function Contact() {
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-main-primary focus:border-main-primary border border-gray-300 rounded-md"
                       aria-describedby="message-max"
                       defaultValue={''}
+                      onChange={e => setMessage(e.target.value)}
+
                     />
                   </div>
                 </div>
