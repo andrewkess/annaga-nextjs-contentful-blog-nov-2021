@@ -13,9 +13,11 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
-        'main-primary': '#240001',
+        'main-primary': '#3b0507',
         'main-secondary': colors.red[900],
         'main-salmon': '#B89091',
+        'main-chocolate': '#240001',
+        'main-maroon': '#690101'
       },
       spacing: {
         28: '7rem',

@@ -87,7 +87,7 @@ const people = [
                     <div className="space-y-2">
                       <div className="text-lg leading-6 font-medium space-y-1">
                         <h3>{person.name}</h3>
-                        <p className="text-indigo-600">{person.role}</p>
+                        <p className="text-main-primary">{person.role}</p>
                       </div>
                       <ul role="list" className="flex space-x-5">
                         <li>

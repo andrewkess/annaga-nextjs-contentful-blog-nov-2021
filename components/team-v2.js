@@ -178,7 +178,7 @@ export default function Contact() {
               
             <>
      
-      <div className="bg-gray-200">
+      <div className="bg-gray-50">
         <div className="mx-auto pt-18 py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24   ">
           <div className="space-y-12">
             <ul
@@ -195,7 +195,7 @@ export default function Contact() {
                     <div className="space-y-2">
                       <div className="text-lg leading-6 font-medium space-y-1">
                         <h3>{person.name}</h3>
-                        <p className="text-indigo-600">{person.role}</p>
+                        <p className="text-main-primary">{person.role}</p>
                       </div>
                       <ul role="list" className="flex space-x-5">
                         <li>
