@@ -29,8 +29,8 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className={classNames(
-        open ? 'bg-red-900' : 'bg-transparent',
-        ' mx-auto p-6 md:p-6 lg:p-5'
+        open ? 'bg-main-primary' : 'bg-transparent',
+        ' mx-auto p-6 md:p-6 lg:p-6'
 
       )}>
 
@@ -39,11 +39,11 @@ export default function Navbar() {
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white lg:bg-gray-900 lg:bg-opacity-60 hover:text-white hover:bg-gray-900 hover:bg-opacity-60 lg:hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-main-salmon lg:hover:text-white lg:bg-black lg:bg-opacity-50 lg:hover:bg-opacity-70 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-transparent"
                 >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-7 w-7" aria-hidden="true" />
+                    <XIcon className="block h-7 w-7 hover:text-main-salmon lg:hover:text-white" aria-hidden="true" />
                   ) : (
                     <MenuIcon className="block h-7 w-7" aria-hidden="true" />
                   )}
@@ -66,7 +66,7 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="" >
-            <div className="bg-gray-900 px-2 pt-5 pb-3 space-y-1 h-screen text-center" >
+            <div className="bg-main-primary px-2 pt-5 pb-3 space-y-1 h-screen text-center" >
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -74,7 +74,7 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current ? '' : '',
-                    'bg-gray-900 text-5xl text-white hover:text-red-800 block px-3 py-1 rounded-md font-medium'
+                    'text-5xl text-white hover:text-main-salmon block px-3 py-1 rounded-md font-medium'
                   )
             
                 }
