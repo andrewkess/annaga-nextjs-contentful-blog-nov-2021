@@ -22,17 +22,14 @@ export default async (req, res) => {
   };
 
 
-//   res.status(200).json({ status: 'OK' });
-//await mail.send(data)
-res.redirect(307, '/')
 
-//res.redirect(200, '/thankyou')
 
-// try {
-//     await mail.send(data)
-//     res.redirect(307, '../thankyou')
-//   } catch (err) {
-//     res.status(500).send({ error: 'failed to fetch data' })
-//   }
+  try {
+    await mail.send(data)
+    res.status(200).json({ status: 'OK' });
+    // res.redirect(307, '../thankyou')
+  } catch (err) {
+    res.status(500).send({ error: 'failed to fetch data' })
+  }
 
 };

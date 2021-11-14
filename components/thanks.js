@@ -3,52 +3,7 @@
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
 
-const people = [
-    {
-      name: 'Juan Pablo Domenech',
-      role: 'Director',
-      imageUrl:
-        'https://res.cloudinary.com/annaga/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1636733067/image-w856_pdmbk9.jpg',
-      twitterUrl: '#',
-      linkedinUrl: '#',
-    },
-    {
-        name: 'Noboru de Abreu',
-        role: 'Producer',
-        imageUrl:
-          'https://res.cloudinary.com/annaga/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1636860079/IMG_2514_dbyaku.jpg',
-        twitterUrl: '#',
-        linkedinUrl: '#',
-      },
-      {
-        name: 'Juan Pablo Domenech2',
-        role: 'Director',
-        imageUrl:
-          'https://res.cloudinary.com/annaga/image/upload/v1636733067/image-w856_pdmbk9.jpg',
-        twitterUrl: '#',
-        linkedinUrl: '#',
-      },
-      {
-        name: 'Juan Pablo Domenech3',
-        role: 'Director',
-        imageUrl:
-          'https://res.cloudinary.com/annaga/image/upload/v1636733067/image-w856_pdmbk9.jpg',
-        twitterUrl: '#',
-        linkedinUrl: '#',
-      },
-      {
-        name: 'Juan Pablo Domenech4',
-        role: 'Director',
-        imageUrl:
-          'https://res.cloudinary.com/annaga/image/upload/v1636733067/image-w856_pdmbk9.jpg',
-        twitterUrl: '#',
-        linkedinUrl: '#',
-      },
-    // More people...
-  ]
 
-
-  
 
 
 
@@ -65,7 +20,7 @@ export default function Team() {
         <div className="relative shadow-xl">
           <h2 className="sr-only">Contact us</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3">
+          <div className="grid grid-cols-1">
             {/* Contact information */}
             <div className="relative overflow-hidden bg-main-primary min-h-screen py-10 px-6 sm:px-12 xl:p-14 pb-14 sm:pb-16">
               <div className="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
