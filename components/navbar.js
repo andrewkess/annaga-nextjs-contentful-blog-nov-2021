@@ -41,7 +41,7 @@ export default function Navbar() {
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-main-salmon lg:hover:text-white lg:bg-black lg:bg-opacity-50 lg:hover:bg-opacity-70 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-transparent"
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover-text-black hover:text-opacity-50 lg:hover:text-white lg:bg-black lg:bg-opacity-50 lg:hover:bg-opacity-70 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-transparent"
                 >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -67,15 +67,19 @@ export default function Navbar() {
             </div>
           </div>
           <Transition
-        enter="transition duration-100 ease-out"
+        enter="transition duration-250 ease-out"
         enterFrom="transform scale-100 opacity-0"
         enterTo="transform scale-100 opacity-100"
         leave="transition duration-75 ease-out"
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-100 opacity-0"
       >
-          <Disclosure.Panel className="absolute inset-x-0 top-0 h-screen bg-main-primary" >
-            <div className="px-2 pt-32 pb-3 space-y-1 text-center" >
+          <Disclosure.Panel className="h-screen bg-main-primary absolute inset-x-0 top-0" >
+            <div className="px-2 pt-32 pb-3 space-y-1 text-center "
+                            style={{
+                              fontFamily: "'Roboto', sans-serif",
+                            }}
+            >
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -83,14 +87,11 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current ? '' : '',
-                    'text-5xl text-white hover:text-main-salmon block px-3 py-1 rounded-md font-medium'
+                    'text-4xl md:text-5xl text-white hover:text-main-salmon block px-3 py-2 rounded-md font-bold tracking-tight leading-tight'
                   )
             
                 }
-                
-                style={{
-                  fontFamily: "'Bebas Neue', cursive",
-                }}
+              
 
                 aria-current={item.current ? 'page' : undefined}
                 >
