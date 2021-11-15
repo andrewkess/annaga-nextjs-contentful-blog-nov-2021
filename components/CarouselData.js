@@ -14,7 +14,7 @@ export const CarouselData = [
     },
     {
       image:
-        "https://res.cloudinary.com/annaga/image/upload/v1636486536/minari-keyframe_fhhkox.jpg",
+        "https://res.cloudinary.com/annaga/image/upload/v1636486532/spy_emrbfg.jpg",
         title: "Desert Storm story",
         blurb: "A magical journey about the power of imagination."
     },

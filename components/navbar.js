@@ -61,7 +61,7 @@ export default function Navbar() {
             </div>
           </div>
           <Transition
-        enter="transition duration-250 ease-out"
+        enter="transition duration-150 ease-out"
         enterFrom="transform scale-100 opacity-0"
         enterTo="transform scale-100 opacity-100"
         leave="transition duration-75 ease-out"

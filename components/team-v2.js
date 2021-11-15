@@ -6,7 +6,7 @@ import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 const people = [
     {
       name: 'Juan Pablo Domenech',
-      role: 'Director',
+      role: 'Art Director',
       imageUrl:
         'https://res.cloudinary.com/annaga/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1636733067/image-w856_pdmbk9.jpg',
       twitterUrl: '#',
@@ -21,10 +21,10 @@ const people = [
         linkedinUrl: '#',
       },
       {
-        name: 'Juan Pablo Domenech2',
+        name: 'Pacho Garcia Santos',
         role: 'Director',
         imageUrl:
-          'https://res.cloudinary.com/annaga/image/upload/v1636733067/image-w856_pdmbk9.jpg',
+          'https://res.cloudinary.com/annaga/image/upload/v1636926786/soccer-fan-cheering-for-national-team-at-the-game-picture-id970110584_rnuvyl.jpg',
         twitterUrl: '#',
         linkedinUrl: '#',
       },
