@@ -14,7 +14,7 @@ export default function PostPreview({
   return (
     <>
     <div>
-      <div className="aspect-w-2 aspect-h-3 bg-red-900">
+      <div className="mx-12 md:mx-0 bg-red-900">
         <CoverImage title={title} slug={slug} url={coverImage.url} />
       </div>
       <h3 className="text-3xl mb-3 leading-snug">
