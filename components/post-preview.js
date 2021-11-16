@@ -12,20 +12,17 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <>
-    <div>
-      <div className="md:mx-0 bg-red-900">
-        <CoverImage title={title} slug={slug} url={coverImage.url} />
-      </div>
-      <h3 className="text-3xl mb-3 leading-snug">
-        <Link href={`/posts/${slug}`}>
-          <a className="hover:underline">{title}</a>
-        </Link>
-      </h3>
-      <div className="text-lg mb-4">
-      {author.name} <DateComponent dateString={date} />
-      </div>
+    <><Link href={`/posts/${slug}`}><a className="hover:underline">
+    <div className="relative bg-yellow-600 aspect-w-2 aspect-h-3">
+    <CoverImage title={title} slug={slug} url={coverImage.url} />
+
+    <div className="z-10 py-6 text-white absolute inset-x-0 bottom-0  hover:bg-black hover:bg-opacity-20">
+      <div className="absolute inset-x-0 bottom-0 text-3xl leading-snug bg-gradient-to-b from-transparent to-black">{title}
+      <div className="text-lg">{author.name} <DateComponent dateString={date} /></div></div>
+
     </div>
+    
+    </div></a></Link>
     </>
 
   )
