@@ -1,6 +1,6 @@
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
+// import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
 import Navbar from '../components/navbar'
 import Carousel from '../components/Carousel'
@@ -26,7 +26,8 @@ if (typeof window !== "undefined") {
 
 export default function Index({ preview, allPosts }) {
   const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  //const morePosts = allPosts.slice(1)
+  const morePosts = allPosts
   return (
     <>
       <Layout preview={preview}>
@@ -38,16 +39,6 @@ export default function Index({ preview, allPosts }) {
         <Navbar />
         <Container>
           <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>

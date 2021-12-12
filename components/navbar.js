@@ -30,7 +30,7 @@ export default function Navbar() {
       {({ open }) => (
         <>
 
-          <div className="mx-auto p-6">
+          <div className="mx-auto p-5">
 
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center">
@@ -48,7 +48,7 @@ export default function Navbar() {
               <div className="flex-1 flex items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex-shrink-0 flex items-center z-50">
                   <a href="/" key="testwindow"><img
-                    className="block pt-1 h-8 md:h-9 w-auto"
+                    className="block h-8 md:h-9 w-auto"
                     src="https://res.cloudinary.com/annaga/image/upload/v1636486534/annaga-logo_du1dlj.png"
                     alt="Annaga"
                   /></a>
