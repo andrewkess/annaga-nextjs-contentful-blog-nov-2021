@@ -38,7 +38,6 @@ export default function Index({ preview, allPosts }) {
         <Carousel />
         <Navbar />
         <Container>
-          <Intro />
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>

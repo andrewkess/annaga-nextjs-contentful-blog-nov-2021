@@ -60,12 +60,12 @@ export default function Team() {
 
 
 
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 min-h-screen">
       <div className="mx-auto">
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact us</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3">
+          <div className="grid grid-cols-1 lg:grid-cols-3 min-h-screen">
             {/* Contact information */}
             <div className="relative overflow-hidden bg-main-primary py-10 px-6 sm:px-12 xl:p-14 pb-14 sm:pb-16">
               <div className="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
