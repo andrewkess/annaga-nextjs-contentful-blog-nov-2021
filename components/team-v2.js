@@ -92,8 +92,8 @@ export default function Team() {
                       y2="814.66"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stopColor="#fff" />
-                      <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                      <stop stopColor="#e87309" />
+                      <stop offset={1} stopColor="#e87309" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -125,8 +125,8 @@ export default function Team() {
                       y2="735.66"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stopColor="#fff" />
-                      <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                      <stop stopColor="#e87309" />
+                      <stop offset={1} stopColor="#e87309" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -158,8 +158,8 @@ export default function Team() {
                       y2="1032.66"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stopColor="#fff" />
-                      <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                      <stop stopColor="#e87309" />
+                      <stop offset={1} stopColor="#e87309" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -171,7 +171,7 @@ export default function Team() {
                          }}
               
               >About us</h3>
-              <p className="mt-6 text-base text-gray-200 max-w-3xl">
+              <p className="mt-6 text-lg text-gray-200 max-w-3xl">
                 Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
                 lacus arcu. Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.
               </p>

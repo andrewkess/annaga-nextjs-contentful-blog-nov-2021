@@ -46,7 +46,7 @@ export default function Contact() {
 
 
 
-    <div className="bg-gray-100 min-h-screen">
+    <div className="min-h-screen">
       <div className="mx-auto">
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact us</h2>
@@ -100,7 +100,7 @@ export default function Contact() {
                   <path
                     d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"
                     fill="url(#linear2)"
-                    fillOpacity="1"
+                    fillOpacity=".1"
                   />
                   <defs>
                     <linearGradient
@@ -134,7 +134,7 @@ export default function Contact() {
                   <path
                     d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"
                     fill="url(#linear3)"
-                    fillOpacity="1"
+                    fillOpacity=".1"
                   />
                   <defs>
                     <linearGradient

@@ -51,7 +51,7 @@ export default function Footer() {
                 href={item.href}
                 className="text-base"
               >
-                <a className="p-3">{item.name}</a>
+                <a className="p-3 lg:text-lg">{item.name}</a>
 
               </Link>
             </div>
