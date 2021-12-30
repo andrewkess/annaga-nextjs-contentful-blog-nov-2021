@@ -78,8 +78,8 @@ export default function Contact() {
                       y2="814.66"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stopColor="#fff" />
-                      <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                      <stop stopColor="#e87309" />
+                      <stop offset={1} stopColor="#e87309" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -100,7 +100,7 @@ export default function Contact() {
                   <path
                     d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"
                     fill="url(#linear2)"
-                    fillOpacity=".1"
+                    fillOpacity="1"
                   />
                   <defs>
                     <linearGradient
@@ -110,9 +110,10 @@ export default function Contact() {
                       x2="899.66"
                       y2="735.66"
                       gradientUnits="userSpaceOnUse"
+                      
                     >
-                      <stop stopColor="#fff" />
-                      <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                      <stop stopColor="#e87309" />
+                      <stop offset={1} stopColor="#e87309" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -133,7 +134,7 @@ export default function Contact() {
                   <path
                     d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"
                     fill="url(#linear3)"
-                    fillOpacity=".1"
+                    fillOpacity="1"
                   />
                   <defs>
                     <linearGradient
@@ -144,8 +145,8 @@ export default function Contact() {
                       y2="1032.66"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stopColor="#fff" />
-                      <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                      <stop stopColor="#e87309" />
+                      <stop offset={1} stopColor="#e87309" stopOpacity={0} />
                     </linearGradient>
                   </defs>
                 </svg>

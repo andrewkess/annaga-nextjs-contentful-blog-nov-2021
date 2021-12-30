@@ -17,7 +17,8 @@ module.exports = {
         'main-secondary': colors.red[900],
         'main-salmon': '#B89091',
         'main-chocolate': '#240001',
-        'main-maroon': '#690101'
+        'main-maroon': '#690101',
+        'main-orange': '#e87309'
       },
       spacing: {
         28: '7rem',
