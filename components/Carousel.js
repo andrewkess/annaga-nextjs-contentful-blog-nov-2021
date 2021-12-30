@@ -90,7 +90,7 @@ class Carousel extends Component {
                     <div
                       className={
                         index === this.state.currentSlide
-                          ? 'absolute group z-10 py-6 text-white inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black hover:bg-black hover:bg-opacity-20'
+                          ? 'absolute group z-10 py-6 text-white/80 hover:text-white/100 inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black hover:bg-black hover:bg-opacity-20'
                           : 'hidden'
                       }
                     >
@@ -107,7 +107,7 @@ class Carousel extends Component {
                         />
                       </div>
 
-                      <div className="text-xl font-medium sm:text-2xl md:text-2xl px-6 sm:px-8 md:px-12 lg:px-16 xl:pl-20   pb-4 pr-18">
+                      <div className="text-xl font-medium sm:text-2xl md:text-2xl px-6 sm:px-8 md:px-12 lg:px-16 xl:pl-20   pb-4 pr-18 lg:pb-8">
                         {slide.blurb}
                       </div>
                     </div>
