@@ -180,7 +180,7 @@ export default function Team() {
 
             {/* Contact form */}
             <div className="py-10 px-6 sm:px-12 xl:p-14 lg:col-span-2 bg-gray-50">
-              <h3 className="text-2xl lg:text-2xl pt-3 sm:pt-5 lg:pt-24 font-medium text-main-primary"
+              <h3 className="text-2xl lg:text-2xl pt-3 sm:pt-5 lg:pt-24 font-semibold text-gray-500"
                 style={{
                     fontFamily: "'Roboto', sans-serif" 
                              }}
@@ -203,7 +203,7 @@ export default function Team() {
                   <div className="space-y-2">
                     <div className="text-lg leading-6 font-medium space-y-1">
                       <h3>{person.name}</h3>
-                      <p className="text-main-primary">{person.role}</p>
+                      <p className="text-main-primary/60 text-base">{person.role}</p>
                     </div>
                     <ul role="list" className="flex space-x-5">
                       <li>

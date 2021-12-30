@@ -158,7 +158,7 @@ export default function Contact() {
                          }}
               
               >Contact us</h3>
-              <p className="mt-6 text-base text-gray-200 max-w-3xl">
+              <p className="mt-6 text-lg text-gray-200 max-w-3xl">
                 Annaga Productions<br/>
                 Av. San Juan 3374                
                 <br/>C1425 CABA<br/>Argentina
@@ -168,14 +168,14 @@ export default function Contact() {
                   <span className="sr-only">Phone number</span>
                 </dt>
                 <dd className="flex text-base text-gray-200">
-                  <PhoneIcon className="flex-shrink-0 w-6 h-6 text-main-salmon" aria-hidden="true" />
+                  <PhoneIcon className="flex-shrink-0 w-6 h-6 text-white/50" aria-hidden="true" />
                   <span className="ml-3">+1 (555) 123-4567</span>
                 </dd>
                 <dt>
                   <span className="sr-only">Email</span>
                 </dt>
                 <dd className="flex text-base text-red-50">
-                  <MailIcon className="flex-shrink-0 w-6 h-6 text-main-salmon" aria-hidden="true" />
+                  <MailIcon className="flex-shrink-0 w-6 h-6 text-white/50" aria-hidden="true" />
                   <span className="ml-3">annaga.productions@gmail.com</span>
                 </dd>
               </dl>
@@ -183,7 +183,7 @@ export default function Contact() {
 
             {/* Contact form */}
             <div className="py-10 px-6 sm:px-12 xl:p-14 lg:col-span-2 bg-gray-50">
-              <h3 className="text-2xl lg:text-2xl pt-3 sm:pt-5 lg:pt-24 font-medium text-main-primary"
+              <h3 className="text-2xl lg:text-2xl pt-3 sm:pt-5 lg:pt-24 font-semibold text-gray-500"
                 style={{
                     fontFamily: "'Roboto', sans-serif" 
                              }}
@@ -298,7 +298,7 @@ export default function Contact() {
                 <div className="sm:col-span-2 sm:flex sm:justify-end">
                   <button
                     type="submit"
-                    className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-main-maroon hover:bg-main-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-main-primary sm:w-auto"
+                    className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-main-primary/50 hover:bg-main-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-main-primary sm:w-auto"
                   >
                     Send
                   </button>

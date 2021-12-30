@@ -39,7 +39,7 @@ export default function Navbar() {
                 >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-7 w-7 hover:text-main-salmon lg:hover:text-white z-50" aria-hidden="true" />
+                    <XIcon className="block h-7 w-7 hover:text-white/50 z-50" aria-hidden="true" />
                   ) : (
                     <MenuIcon className="block h-7 w-7" aria-hidden="true" />
                   )}
@@ -81,7 +81,7 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current ? '' : '',
-                    'text-4xl md:text-5xl text-white hover:text-main-salmon block px-3 py-2 rounded-md font-bold tracking-tight leading-tight'
+                    'text-4xl md:text-5xl text-white hover:text-white/50 block px-3 py-2 rounded-md font-bold tracking-tight leading-tight'
                   )
             
                 }
