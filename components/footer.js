@@ -42,12 +42,17 @@ export default function Footer() {
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
-            <div key={item.name} className="lg:p-3 text-gray-500 cursor-pointer rounded-md hover:bg-main-primary hover:text-white">
+
+            <div key={item.name} className="mx-2 inline-flex items-center text-gray-500 cursor-pointer rounded-md hover:bg-main-primary hover:text-white">
+
+
+
               <Link
                 href={item.href}
                 className="text-base"
               >
-                <a className="p-5">{item.name}</a>
+                <a className="p-3">{item.name}</a>
+
               </Link>
             </div>
           ))}
