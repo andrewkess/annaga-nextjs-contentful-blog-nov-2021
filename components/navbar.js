@@ -30,7 +30,7 @@ export default function Navbar() {
       {({ open }) => (
         <>
 
-          <div className="mx-auto p-5">
+          <div className="mx-auto p-5 md:p-8">
 
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center">
