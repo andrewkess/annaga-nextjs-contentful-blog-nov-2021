@@ -25,7 +25,7 @@ export default function PostPreview({
       }}
       
       >{title} 
-      <div className="inline text-2xl"   style={{
+      <div className="inline text-2xl invisible sm:visible"   style={{
         fontFamily: "'Open Sans Condensed', sans-serif",
       }}>&nbsp;&nbsp;(<DateComponent dateString={date} />)</div></div>
 
