@@ -32,7 +32,7 @@ export default function Index({ preview, allPosts }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Annaga productions</title>
         </Head>
 
         <Carousel />

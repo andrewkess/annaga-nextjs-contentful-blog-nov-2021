@@ -7,7 +7,7 @@ const people = [
     {
       name: 'Juan Pablo Domenech',
       role: 'Art Director',
-      bio: 'Juan Pablo has worked across New York, Paris and Buenos Aires over the last four decades, directing for French TV channels TF1 and France 2, and scriptwriting for several Argentinian TV series and feature films, including "Luna de Avellanada" and "La niña santa". He currently resides in Buenos Aires.',
+      bio: 'Juan Pablo has worked across New York, Paris and Buenos Aires over the last four decades, directing for French TV channels TF1 and France 2, and scriptwriting for several Argentinian TV series and feature films, including "Luna de Avellanada" and "La Niña Santa". He currently resides in Buenos Aires.',
       imageUrl:
         'https://res.cloudinary.com/annaga/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1636733067/image-w856_pdmbk9.jpg',
       twitterUrl: '#',
@@ -36,7 +36,7 @@ const people = [
         role: 'Assistant',
         bio: 'Calvados has worked across New York, Paris and Buenos Aires over the last four decades, directing for French TV channels TF1 and France 2, and scriptwriting for several Argentinian TV series and feature films, including "Luna de Avellanada" and "La niña santa". He currently resides in Buenos Aires.',
         imageUrl:
-          'https://res.cloudinary.com/annaga/image/upload/v1636733067/image-w856_pdmbk9.jpg',
+        'https://res.cloudinary.com/annaga/image/upload/v1640923741/photo-1499952127939-9bbf5af6c51c_nunums.jpg',
         twitterUrl: '#',
         linkedinUrl: '#',
       },
