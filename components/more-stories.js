@@ -3,7 +3,7 @@ import PostPreview from '../components/post-preview'
 export default function MoreStories({ posts }) {
   return (
     <section>
-              <div className="relative min-w-full">
+              <div className="relative">
 
       <h2 className="mt-16 mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
         Latest projects
