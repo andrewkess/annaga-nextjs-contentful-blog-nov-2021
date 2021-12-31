@@ -37,7 +37,7 @@ var modifiedTitle = titleArr.join(' ');
 
     <div className="z-10 py-6 text-white/90 hover:text-white/100 absolute inset-x-0 bottom-0  hover:bg-black hover:bg-opacity-20">
       <div className="absolute flex flex-wrap sm:flex-nowrap justify-between items-end inset-x-0 bottom-0 leading-none bg-gradient-to-b from-transparent to-black
-      text-2xl sm:text-6xl 2xl:text-7xl pl-2 pb-2 sm:p-4 lg:p-6 drop-shadow-lg tracking-tight md:tracking-normal
+      text-3xl sm:text-6xl 2xl:text-7xl p-2 sm:p-4 lg:p-6 drop-shadow-lg tracking-tight md:tracking-normal
       "
       style={{
         fontFamily: "'Rubik', sans-serif",
