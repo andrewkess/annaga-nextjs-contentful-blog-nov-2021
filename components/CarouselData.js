@@ -13,7 +13,7 @@ export const CarouselData = [
     },
     {
       image:
-        "https://res.cloudinary.com/annaga/image/upload/q_auto/c_mfit,h_1600,w_2400/v1636486537/bear_gsipdp.jpg",
+        "https://res.cloudinary.com/annaga/image/upload/q_auto/c_mfit,h_1600,w_2400,f_avif/v1636486537/bear_gsipdp.jpg",
         title: "Bears and cubs",
         blurb: "Graceful comment on timely sociopolitical themes."
 
