@@ -1,7 +1,9 @@
 import Link from 'next/link'
+import React, { useEffect, useState } from 'react';
 import Avatar from '../components/avatar'
 import DateComponent from '../components/date'
 import CoverImage from './cover-image'
+
 
 export default function PostPreview({
   title,
@@ -12,26 +14,41 @@ export default function PostPreview({
   slug,
 }) {
 
+const [modifiedTitle, setModifiedTitle] = useState(title);
+
+
+  useEffect(() => {
+
 //  console.log(title);
 // Split using a space character
 let titleArr = title.toUpperCase().split(' ');
 
+//Add hyphen for words => 9 characters
 titleArr.forEach((word,i,arr) => {
-  
   if(word.length>=9){
-    console.log('long word:', word);
+    //console.log('long word:', word);
     arr[i] = word.slice(0, 5) + "-" + word.slice(5);
   }
-  
 })
 
-var modifiedTitle = titleArr.join(' ');
+//convert word array back to string
+let modified = titleArr.join(' ');
+
+setModifiedTitle(modified);
+
 
 // console.log(modifiedTitle);
 // console.log(titleArr);
 
+
+    
+
+  }, [])
+
+
+
   return (
-    <><Link href={`/posts/${slug}`}><a className="hover:underline">
+    <><Link href={`/posts/${slug}`}><a>
     <div className="relative aspect-w-2 aspect-h-3">
     <CoverImage title={title} slug={slug} url={coverImage.url} />
 
@@ -43,7 +60,7 @@ var modifiedTitle = titleArr.join(' ');
         fontFamily: "'Rubik', sans-serif",
       }} >
         
-    <div className="">{modifiedTitle}</div> 
+    <div>{modifiedTitle}</div> 
       
       <div className="text-xl sm:text-2xl lg:text-3xl bg-gray-900 bg-opacity-10 rounded text-right"   style={{
         fontFamily: "'Open Sans Condensed', sans-serif",
