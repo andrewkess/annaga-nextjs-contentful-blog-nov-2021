@@ -7,7 +7,7 @@ export default function CoverImage({ title, url, slug }) {
     <ContentfulImage
       width={520}
       height={780}
-        // resize={ { width: 100, height: 100 } } 
+      // resize={ { width: 100, height: 100 } } 
       alt={`Cover Image for ${title}`}
       className={cn('shadow-small object-cover', {
         'hover:shadow-medium transition-shadow duration-200': slug,
