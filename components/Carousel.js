@@ -11,7 +11,7 @@ class Carousel extends Component {
     super(props);
     this.state = {
       currentSlide: 0,
-      paused: false,
+      paused: true,
     };
   }
 
@@ -92,12 +92,12 @@ class Carousel extends Component {
                     <div
                       className={
                         index === this.state.currentSlide
-                          ? 'absolute inset-x-0 bottom-0 w-screen group z-10 py-6 text-white/80 hover:text-white/100 bg-gradient-to-b from-transparent to-black hover:bg-black hover:bg-opacity-20'
+                          ? 'absolute inset-x-0 bottom-0 w-screen group z-10 p-6 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-20 text-white/80 hover:text-white/100 bg-gradient-to-b from-transparent to-black hover:bg-black hover:bg-opacity-20'
                           : 'hidden'
                       }
                     >
                       <div
-                        className="text-7xl font-medium sm:text-8xl lg:text-9xl pl-6 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-20 leading-none drop-shadow-lg tracking-tight "
+                        className="text-7xl font-medium sm:text-8xl lg:text-9xl leading-none drop-shadow-lg tracking-tight "
                         style={{
                           fontFamily: "'Rubik', sans-serif",
                         }}
@@ -105,11 +105,11 @@ class Carousel extends Component {
                         {slide.title}
                         <FaAngleDoubleRight
                           onClick={this.prevSlide}
-                          className="hidden sm:inline text-4xl font-medium sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 group-hover:text-white"
+                          className="hidden sm:inline text-4xl sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 group-hover:text-white"
                         />
                       </div>
 
-                      <div className="text-xl font-medium sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl px-7 mr-10 sm:px-8 md:px-12 lg:px-16 xl:pl-20 mb-4 pr-18 lg:pb-8">
+                      <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl ml-1 mr-12 mb-4 lg:pb-8">
                         {slide.blurb}
                       </div>
                     </div>
