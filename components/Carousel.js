@@ -16,15 +16,16 @@ class Carousel extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => {
-      if (this.state.paused === false) {
-        let newSlide =
-          this.state.currentSlide === CarouselData.length - 1
-            ? 0
-            : this.state.currentSlide + 1;
-        this.setState({ currentSlide: newSlide });
-      }
-    }, 4000);
+
+    // setInterval(() => {
+    //   if (this.state.paused === false) {
+    //     let newSlide =
+    //       this.state.currentSlide === CarouselData.length - 1
+    //         ? 0
+    //         : this.state.currentSlide + 1;
+    //     this.setState({ currentSlide: newSlide });
+    //   }
+    // }, 4000);
   }
 
   nextSlide = () => {
@@ -80,6 +81,7 @@ class Carousel extends Component {
 
                   <a
                     href="/"
+                    aria-label="Project page"
                     onMouseEnter={() => {
                       this.setState({ paused: true });
                     }}
@@ -90,7 +92,7 @@ class Carousel extends Component {
                     <div
                       className={
                         index === this.state.currentSlide
-                          ? 'absolute group z-10 py-6 text-white/80 hover:text-white/100 inset-x-0 bottom-0 bg-gradient-to-b from-transparent to-black hover:bg-black hover:bg-opacity-20'
+                          ? 'absolute inset-x-0 bottom-0 w-screen group z-10 py-6 text-white/80 hover:text-white/100 bg-gradient-to-b from-transparent to-black hover:bg-black hover:bg-opacity-20'
                           : 'hidden'
                       }
                     >

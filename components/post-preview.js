@@ -48,9 +48,9 @@ setModifiedTitle(modified);
 
 
   return (
-    <><Link href={`/posts/${slug}`}><a>
+    <><Link href={`/posts/${slug}`}><a href="/" aria-label="Project page">
     <div className="relative aspect-w-2 aspect-h-3">
-    <CoverImage title={title} slug={slug} url={coverImage.url} />
+    <CoverImage title={title} url={coverImage.url} />
 
     <div className="z-10 py-6 text-white/90 hover:text-white/100 absolute inset-x-0 bottom-0  hover:bg-black hover:bg-opacity-20">
       <div className="absolute flex flex-wrap sm:flex-nowrap justify-between items-end inset-x-0 bottom-0 leading-none bg-gradient-to-b from-transparent to-black

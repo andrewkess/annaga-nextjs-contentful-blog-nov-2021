@@ -62,21 +62,21 @@ export default function Footer() {
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-400 hover:text-main-primary text-3xl"
+              className="text-gray-500 hover:text-main-primary text-3xl"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" />
             </a>
           ))}
         </div>
-        <p className="mt-8 text-center text-base text-gray-400">
+        <p className="mt-8 text-center text-base text-gray-500">
           &copy; 2021 Annaga Productions
           <br /> All Rights Reserved
           <br />
           <a
             key="privacy"
             href="privacy"
-            className="text-gray-400 hover:text-main-primary"
+            className="text-gray-500 hover:text-main-primary"
           >
             Privacy Policy
           </a>
