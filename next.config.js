@@ -3,7 +3,7 @@
 const securityHeaders = [
 {
   key: 'Content-Security-Policy',
-  value: "default-src 'self'; img-src 'self' data: res.cloudinary.com images.ctfassets.net; font-src fonts.gstatic.com; style-src 'self' fonts.googleapis.com 'unsafe-inline'; script-src 'self' 'unsafe-eval'"
+  value: "default-src 'self' vitals.vercel-insights.com; img-src 'self' data: res.cloudinary.com images.ctfassets.net; font-src fonts.gstatic.com; style-src 'self' fonts.googleapis.com 'unsafe-inline'; script-src 'self' 'unsafe-eval'"
 }]
 
 module.exports = {
