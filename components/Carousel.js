@@ -97,12 +97,12 @@ class Carousel extends Component {
                       }
                     >
                       <div
-                        className="text-7xl font-medium sm:text-8xl lg:text-9xl pl-6 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-20 leading-none drop-shadow-lg tracking-tight md:tracking-normal "
+                        className="text-7xl font-medium sm:text-8xl lg:text-9xl pl-6 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-20 leading-none drop-shadow-lg tracking-tight "
                         style={{
-                          fontFamily: "'Bebas Neue', cursive",
+                          fontFamily: "'Rubik', sans-serif",
                         }}
                       >
-                        {slide.title}
+                        {slide.title.toUpperCase()}
                         <FaAngleDoubleRight
                           onClick={this.prevSlide}
                           className="hidden sm:inline text-4xl font-medium sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 group-hover:text-white"
