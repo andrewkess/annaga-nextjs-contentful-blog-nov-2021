@@ -52,7 +52,7 @@ class Carousel extends Component {
     return (
       <div className="m-0">
         <div
-          className="w-screen h-screen flex overflow-hidden relative"
+          className="w-screen h-screen h-max-full flex overflow-hidden relative"
           style={{
             height:
               '100vh' /* Fallback for browsers that do not support Custom Properties */,
