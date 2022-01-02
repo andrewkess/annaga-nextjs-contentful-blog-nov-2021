@@ -34,7 +34,6 @@ export default function Index({ preview, allPosts }) {
         <Head>
           <title>Annaga productions</title>
         </Head>
-
         <Carousel />
         <Navbar />
         <Container>
