@@ -109,7 +109,7 @@ class Carousel extends Component {
                         />
                       </div>
 
-                      <div className="text-xl font-medium sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl px-6 sm:px-8 md:px-12 lg:px-16 xl:pl-20 mb-4 pr-18 lg:pb-8">
+                      <div className="text-xl font-medium sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl px-7 sm:px-8 md:px-12 lg:px-16 xl:pl-20 mb-4 pr-18 lg:pb-8">
                         {slide.blurb}
                       </div>
                     </div>
