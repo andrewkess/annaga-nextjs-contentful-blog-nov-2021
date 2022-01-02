@@ -200,7 +200,7 @@ export default function Team() {
                   <div className="space-y-2 flex items-start justify-between">
                     <div className="basis-1/2 text-lg leading-6 font-medium space-y-1">
                       <h3 className="text-xl">{person.name}</h3>
-                      <p className="text-main-primary/70 text-base">{person.role}</p>
+                      <p className="text-main-primary/80 text-base">{person.role}</p>
                     </div>
                     <ul role="list" className="flex space-x-5">
                       <li>
