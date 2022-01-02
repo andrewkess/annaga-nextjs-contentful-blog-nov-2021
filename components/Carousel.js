@@ -3,7 +3,6 @@ import { CarouselData } from './CarouselData';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
-
 import Swipe from 'react-easy-swipe';
 
 class Carousel extends Component {
@@ -78,6 +77,11 @@ class Carousel extends Component {
                         : 'hidden'
                     }
                   />
+
+
+
+
+
 
                   <a
                     href="/"
