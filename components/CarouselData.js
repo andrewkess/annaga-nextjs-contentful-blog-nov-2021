@@ -14,7 +14,7 @@ export const CarouselData = [
     {
       image:
         "https://res.cloudinary.com/annaga/image/upload/q_auto/f_avif/c_fill,w_1600/v1641050574/bear_gsipdp-q_auto_c_mfit_h_1600_w_2400_hyjg2c.jpg",
-        title: "Moving on upstream",
+        title: "Moving upstream",
         blurb: "Graceful comment on timely sociopolitical themes."
 
     },

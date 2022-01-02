@@ -25,7 +25,7 @@ class Carousel extends Component {
             : this.state.currentSlide + 1;
         this.setState({ currentSlide: newSlide });
       }
-    }, 4000);
+    }, 4500);
   }
 
   nextSlide = () => {
@@ -61,7 +61,7 @@ class Carousel extends Component {
         >
 
 <div className="group h-min-full absolute inset-y-0 left-0 cursor-pointer outline-none focus:outline-none" onClick={this.prevSlide} >
-            <BsChevronCompactLeft className="mx-1 sm:mx-6 text-6xl text-white relative inset-y-1/2 group-hover-text-black group-hover:text-opacity-50" />
+            <BsChevronCompactLeft className="mx-1 sm:mx-6 text-6xl text-white/50 relative inset-y-1/2 group-hover-text-black group-hover:text-opacity-50" />
           </div>
 
 
@@ -109,7 +109,7 @@ class Carousel extends Component {
                         />
                       </div>
 
-                      <div className="text-xl font-medium sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl px-7 sm:px-8 md:px-12 lg:px-16 xl:pl-20 mb-4 pr-18 lg:pb-8">
+                      <div className="text-xl font-medium sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl px-7 mr-10 sm:px-8 md:px-12 lg:px-16 xl:pl-20 mb-4 pr-18 lg:pb-8">
                         {slide.blurb}
                       </div>
                     </div>
@@ -120,7 +120,7 @@ class Carousel extends Component {
           </Swipe>
 
           <div className="group h-min-full absolute inset-y-0 right-0 cursor-pointer" onClick={this.nextSlide}>
-            <BsChevronCompactRight className="mx-1 sm:mx-6 text-6xl text-white relative inset-y-1/2 group-hover-text-black group-hover:text-opacity-50" />
+            <BsChevronCompactRight className="mx-1 sm:mx-6 text-6xl text-white/50 relative inset-y-1/2 group-hover-text-black group-hover:text-opacity-50" />
           </div>
         </div>
       </div>
