@@ -3,20 +3,11 @@
 import Navbar from '../components/navbar'
 import Carousel from '../components/Carousel'
 import Layout from '../components/layout'
-import { useEffect } from 'react'
 import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
 //import { CMS_NAME } from '../lib/constants'
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
-
-
-
-export default function Index({ preview, allPosts }) {
-//  const heroPost = allPosts[0]
-  //const morePosts = allPosts.slice(1)
-
-  useEffect(() => {
 
 //hack to calculate the actual browser window height on mobile and save that value in the 'vh' variable which can be used later in CSS
 if (typeof window !== "undefined") {
@@ -31,8 +22,11 @@ if (typeof window !== "undefined") {
     appHeight();
 
 }
-  }, [])
 
+
+export default function Index({ preview, allPosts }) {
+//  const heroPost = allPosts[0]
+  //const morePosts = allPosts.slice(1)
 
   return (
     <>
