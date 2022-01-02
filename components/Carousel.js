@@ -102,7 +102,7 @@ class Carousel extends Component {
                           fontFamily: "'Rubik', sans-serif",
                         }}
                       >
-                        {slide.title.toUpperCase()}
+                        {slide.title}
                         <FaAngleDoubleRight
                           onClick={this.prevSlide}
                           className="hidden sm:inline text-4xl font-medium sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 group-hover:text-white"
