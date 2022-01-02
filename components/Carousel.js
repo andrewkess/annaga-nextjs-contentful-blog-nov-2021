@@ -10,7 +10,7 @@ class Carousel extends Component {
     super(props);
     this.state = {
       currentSlide: 0,
-      paused: true,
+      paused: false,
     };
   }
 
