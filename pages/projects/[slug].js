@@ -4,13 +4,16 @@ import ErrorPage from 'next/error'
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
 import MoreStories from '../../components/more-stories'
-import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
+//import Header from '../../components/header'
+import PostDescription from '../../components/post-description'
 import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
-import { CMS_NAME } from '../../lib/constants'
+//import { CMS_NAME } from '../../lib/constants'
+import Navbar from '../../components/navbar'
+import PostVideo from '../../components/post-video'
+
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -21,8 +24,18 @@ export default function Post({ post, morePosts, preview }) {
 
   return (
     <Layout preview={preview}>
+
+<PostVideo
+                title={post.title}
+                coverImage={post.coverImage}
+                author={post.author}
+                video={post.video}
+              />
+              <Navbar />
+
+
       <Container>
-        <Header />
+
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
@@ -34,12 +47,13 @@ export default function Post({ post, morePosts, preview }) {
                 </title>
                 <meta property="og:image" content={post.coverImage.url} />
               </Head>
-              <PostHeader
+              <PostDescription
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
               />
+
               <PostBody content={post.content} />
             </article>
             <SectionSeparator />
