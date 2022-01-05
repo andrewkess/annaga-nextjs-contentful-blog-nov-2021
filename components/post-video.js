@@ -49,7 +49,7 @@ className="w-full h-full object-center object-cover"
 
 
 </div>
-<div>Video:{title} + {video[0].url}</div>
+{/* <div>Video:{title} + {video[0].url}</div> */}
 </div>
        </>
   )
