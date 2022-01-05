@@ -48,7 +48,7 @@ setModifiedTitle(modified);
 
 
   return (
-    <><Link href={`/posts/${slug}`}><a href="/" aria-label="Project page">
+    <><Link href={`/projects/${slug}`}><a href="/" aria-label="Project page">
     <div className="relative aspect-w-2 aspect-h-3">
     <CoverImage title={title} url={coverImage.url} />
 

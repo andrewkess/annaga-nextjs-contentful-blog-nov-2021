@@ -1,4 +1,4 @@
-# A statically generated blog example using Next.js and Contentful
+# A statically generated portfolio using Next.js and Contentful headless CMS with optimized video served through Cloudinary
 
 This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [Contentful](https://www.contentful.com/) as the data source.
 

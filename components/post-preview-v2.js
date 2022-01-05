@@ -7,7 +7,7 @@ export default function PostPreview({ title, coverImage, date, author, slug }) {
   return (
     <>
       <div className="m-4">
-        <Link href={`/posts/${slug}`} key={title}>
+        <Link href={`/projects/${slug}`} key={title}>
           <div className="relative bg-indigo-800  cursor-pointer ">
             <div className="absolute inset-0">
               <div className="">

@@ -9,6 +9,8 @@ import { getAllPostsForHome } from '../lib/api'
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
 
+
+
 //hack to calculate the actual browser window height on mobile and save that value in the 'vh' variable which can be used later in CSS
 if (typeof window !== "undefined") {
   // browser code
@@ -38,7 +40,8 @@ export default function Index({ preview, allPosts }) {
         <Navbar />
         <Container>
           {allPosts.length > 0 && <MoreStories posts={allPosts} />}
-        </Container>
+          <hr className="border-accent-2 mt-12" />
+          </Container>
       </Layout>
     </>
   )
