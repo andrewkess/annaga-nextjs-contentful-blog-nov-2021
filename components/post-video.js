@@ -1,6 +1,7 @@
-// import Avatar from '../components/avatar'
-// import CoverImage from '../components/cover-image'
-// import ProjectImage from '../components/project-image'
+import Avatar from '../components/avatar'
+import CoverImage from '../components/cover-image'
+
+import ProjectImage from '../components/project-image'
 
 
 //hack to calculate the actual browser window height on mobile and save that value in the 'vh' variable which can be used later in CSS
@@ -33,7 +34,7 @@ export default function PostVideo({ title, coverImage, author, video }) {
   }}
 >
     
-
+{coverImage && 
 
 <img
 src={coverImage.url}
@@ -41,14 +42,15 @@ alt={title}
 className="w-full h-full object-center object-cover"
 />
 
+}
 
 
 
 
 
 </div>
-{/* <div>Video:{title} + {video[0].url}</div> */}
-</div> 
-</>
+<div>Video:{title} + {video[0].url}</div>
+</div>
+       </>
   )
 }
