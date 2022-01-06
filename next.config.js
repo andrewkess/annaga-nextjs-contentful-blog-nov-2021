@@ -3,7 +3,7 @@
 const securityHeaders = [
 {
   key: 'Content-Security-Policy',
-  value: "default-src 'self' vitals.vercel-insights.com res.cloudinary.com; img-src 'self' data: res.cloudinary.com images.ctfassets.net; font-src 'self' data: fonts.gstatic.com; style-src 'self' fonts.googleapis.com unpkg.com 'unsafe-inline'; script-src 'self' unpkg.com 'unsafe-eval'"
+  value: "default-src 'self' vitals.vercel-insights.com; img-src 'self' data: res.cloudinary.com images.ctfassets.net; font-src 'self' data: fonts.gstatic.com; media-src 'self' res.cloudinary.com; style-src 'self' fonts.googleapis.com 'unsafe-inline'; script-src 'self' 'unsafe-eval'"
 }]
 
 // const securityHeaders = [
