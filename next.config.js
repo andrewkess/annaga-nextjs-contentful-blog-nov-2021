@@ -6,14 +6,6 @@ const securityHeaders = [
   value: "default-src 'self' vitals.vercel-insights.com; img-src 'self' data: res.cloudinary.com images.ctfassets.net; font-src 'self' data: fonts.gstatic.com; media-src 'self' res.cloudinary.com; style-src 'self' fonts.googleapis.com 'unsafe-inline'; script-src 'self' 'unsafe-eval'"
 }]
 
-// const securityHeaders = [
-//   {
-//   key: 'Content-Security-Policy',
-//   value: ""
-// }
-// ];
-
-
 module.exports = {
   async headers() {
     return [

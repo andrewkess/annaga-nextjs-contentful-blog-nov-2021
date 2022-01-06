@@ -23,13 +23,13 @@ const [modifiedTitle, setModifiedTitle] = useState(title);
 // Split using a space character
 let titleArr = title.toUpperCase().split(' ');
 
-//Add hyphen for words => 9 characters
-titleArr.forEach((word,i,arr) => {
-  if(word.length>=9){
-    //console.log('long word:', word);
-    arr[i] = word.slice(0, 5) + "-" + word.slice(5);
-  }
-})
+// //Add hyphen for words => 9 characters
+// titleArr.forEach((word,i,arr) => {
+//   if(word.length>=9){
+//     //console.log('long word:', word);
+//     arr[i] = word.slice(0, 5) + "-" + word.slice(5);
+//   }
+// })
 
 //convert word array back to string
 let modified = titleArr.join(' ');

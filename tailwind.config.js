@@ -51,8 +51,6 @@ module.exports = {
     plugins: [
       // ...
       require('@tailwindcss/forms'),
-      require('@tailwindcss/aspect-ratio'),
-      // require('tailwindcss-hyphens'),
+      require('@tailwindcss/aspect-ratio')
     ]
 }
-
