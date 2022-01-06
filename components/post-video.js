@@ -4,7 +4,7 @@ import ProjectImage from '../components/project-image'
 import VideoPlayer from '../components/videoplayer'
 
 
-export default function PostVideo({ title, coverImage, video }) {
+export default function PostVideo({ title, coverImage }) {
     //console.log(video);
     return (
     <>
@@ -23,7 +23,7 @@ export default function PostVideo({ title, coverImage, video }) {
 
 </div>
 </div>
-<div>Video: { video && video[0].url }</div>
+{/* <div>Video: { video && video[0].url }</div> */}
 <VideoPlayer />
 
        </>
