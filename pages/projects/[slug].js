@@ -23,11 +23,7 @@ export default function Post({ post, morePosts, preview }) {
 
   return (
     <Layout preview={preview}>
-      {/* <PostVideo
-        title={post.title}
-        coverImage={post.coverImage}
-        // video={post.video ?? post.coverImage}
-      />
+      {/* 
       <Navbar /> */}
 
       <Container>
@@ -40,6 +36,12 @@ export default function Post({ post, morePosts, preview }) {
                 <title>{post.title} | Annaga Productions</title>
                 <meta property="og:image" content={post.coverImage.url} />
               </Head>
+
+              <PostVideo
+        title={post.title}
+        coverImage={post.coverImage}
+        // video={post.video ?? post.coverImage}
+      />
               <PostDescription
                 title={post.title}
                 coverImage={post.coverImage}
