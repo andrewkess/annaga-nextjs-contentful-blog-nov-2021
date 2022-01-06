@@ -40,6 +40,13 @@ export default function Meta() {
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
 
 
+<link href="node_modules/cloudinary-video-player/dist/cld-video-player.min.css" rel="stylesheet" />
+
+<script src="node_modules/lodash/lodash.js" type="text/javascript"></script>
+<script src="node_modules/cloudinary-core/cloudinary-core.js" type="text/javascript"></script>
+<script src="node_modules/cloudinary-video-player/dist/cld-video-player.min.js" type="text/javascript"></script>
+
+
       <meta
         name="description"
         content={`A statically generated blog example using Next.js and Contentful.`}
