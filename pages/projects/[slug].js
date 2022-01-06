@@ -13,6 +13,7 @@ import PostTitle from '../../components/post-title';
 //import { CMS_NAME } from '../../lib/constants'
 import Navbar from '../../components/navbar';
 import PostVideo from '../../components/post-video';
+import Script from 'next/script'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
