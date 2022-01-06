@@ -2,9 +2,6 @@
 // import CoverImage from '../components/cover-image'
 import ProjectImage from '../components/project-image'
 
-import 'https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css'
-
-
 // //hack to calculate the actual browser window height on mobile and save that value in the 'vh' variable which can be used later in CSS
 // if (typeof window !== "undefined") {
 //     // browser code
