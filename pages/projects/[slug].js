@@ -34,8 +34,6 @@ export default function Post({ post, morePosts, preview }) {
               <Head>
                 <title>{post.title} | Annaga Productions</title>
                 <meta property="og:image" content={post.coverImage.url} />
-
-
               </Head>
 
               <PostVideo
