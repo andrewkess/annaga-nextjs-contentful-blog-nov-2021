@@ -19,7 +19,7 @@ if (typeof window !== "undefined") {
   }
 
 
-export default function PostVideo({ title, coverImage, video }) {
+export default function PostVideo({ title, coverImage }) {
     //console.log(video);
     return (
     <>

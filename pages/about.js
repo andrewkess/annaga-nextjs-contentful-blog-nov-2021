@@ -25,7 +25,7 @@ export default function AboutPage() {
     <>
       <Layout>
         <Head>
-          <title>About Annaga with {CMS_NAME}</title>
+          <title>About Annaga Productions</title>
         </Head>
         <Navbar />
           <AboutBar />
