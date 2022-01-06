@@ -1,6 +1,8 @@
 // import Avatar from '../components/avatar'
 // import CoverImage from '../components/cover-image'
 import ProjectImage from '../components/project-image'
+import VideoPlayer from '../components/videoplayer'
+
 
 // //hack to calculate the actual browser window height on mobile and save that value in the 'vh' variable which can be used later in CSS
 // if (typeof window !== "undefined") {
@@ -38,6 +40,8 @@ export default function PostVideo({ title, coverImage, video }) {
 </div>
 </div>
 <div>Video: { video && video[0].url }</div>
+<VideoPlayer />
+
        </>
   )
 }

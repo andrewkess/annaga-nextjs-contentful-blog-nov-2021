@@ -13,7 +13,7 @@ import PostTitle from '../../components/post-title';
 //import { CMS_NAME } from '../../lib/constants'
 import Navbar from '../../components/navbar';
 import PostVideo from '../../components/post-video';
-import Script from 'next/script'
+//import Script from 'next/script'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
@@ -34,10 +34,10 @@ export default function Post({ post, morePosts, preview }) {
               <Head>
                 <title>{post.title} | Annaga Productions</title>
                 <meta property="og:image" content={post.coverImage.url} />
-                <link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css" rel="stylesheet" />
+                {/* <link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css" rel="stylesheet" />
 
 <Script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js" strategy="lazyOnload" />
-<Script src="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js" strategy="lazyOnload" />
+<Script src="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js" strategy="lazyOnload" /> */}
 
 
               </Head>
