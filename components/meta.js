@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Script from 'next/script'
+//import Script from 'next/script'
 import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
 
 export default function Meta() {
@@ -41,14 +41,10 @@ export default function Meta() {
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
 
 
-<link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css" rel="stylesheet" />
+{/* <link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css" rel="stylesheet" /> */}
 
 {/* <script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js" type="text/javascript"></script>
 <script src="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js" type="text/javascript"></script> */}
-
-
-<Script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js" strategy="lazyOnload" />
-<Script src="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js" strategy="lazyOnload" />
 
 
       <meta
