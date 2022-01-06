@@ -23,14 +23,12 @@ export default function Post({ post, morePosts, preview }) {
 
   return (
     <Layout preview={preview}>
-      {/* 
-      <Navbar /> */}
-
-      <Container>
+     
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
+
             <article>
               <Head>
                 <title>{post.title} | Annaga Productions</title>
@@ -42,6 +40,9 @@ export default function Post({ post, morePosts, preview }) {
         coverImage={post.coverImage}
         // video={post.video ?? post.coverImage}
       />
+       <Navbar /> 
+       <Container>
+
               <PostDescription
                 title={post.title}
                 coverImage={post.coverImage}
@@ -50,14 +51,19 @@ export default function Post({ post, morePosts, preview }) {
               />
 
               <PostBody content={post.content} />
+              </Container>
+
             </article>
+            <Container>
+
             <SectionSeparator />
             {morePosts && morePosts.length > 0 && (
               <MoreStories posts={morePosts} />
             )}
+              </Container>
+
           </>
         )}
-      </Container>
     </Layout>
   );
 }
