@@ -1,22 +1,23 @@
-import Avatar from '../components/avatar'
-import CoverImage from '../components/cover-image'
+// import Avatar from '../components/avatar'
+// import CoverImage from '../components/cover-image'
+// import ProjectImage from '../components/project-image'
 
-import ProjectImage from '../components/project-image'
+//<div>Video:{title} + {video[0].url}</div>
 
 
-//hack to calculate the actual browser window height on mobile and save that value in the 'vh' variable which can be used later in CSS
-if (typeof window !== "undefined") {
-    // browser code
+// //hack to calculate the actual browser window height on mobile and save that value in the 'vh' variable which can be used later in CSS
+// if (typeof window !== "undefined") {
+//     // browser code
   
-    function appHeight() {
-        const doc = document.documentElement
-        doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
-      }
+//     function appHeight() {
+//         const doc = document.documentElement
+//         doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
+//       }
     
-      window.addEventListener('resize', appHeight);
-      appHeight();
+//       window.addEventListener('resize', appHeight);
+//       appHeight();
   
-  }
+//   }
 
 
 export default function PostVideo({ title, coverImage }) {
@@ -44,12 +45,7 @@ className="w-full h-full object-center object-cover"
 
 }
 
-
-
-
-
 </div>
-{/* <div>Video:{title} + {video[0].url}</div> */}
 </div>
        </>
   )
