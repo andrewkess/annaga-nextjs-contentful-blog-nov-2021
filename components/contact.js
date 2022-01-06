@@ -2,14 +2,14 @@
 // import { EXAMPLE_PATH } from '../lib/constants'
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import { useState } from 'react';
-//import { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 
 
 
 
 export default function Contact() {
 
-    //const router = useRouter()
+    const router = useRouter()
 
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -35,7 +35,7 @@ export default function Contact() {
         body: JSON.stringify(data),
       });
 
- //     router.push('/thankyou');
+      router.push('/thankyou');
 
 
     };
