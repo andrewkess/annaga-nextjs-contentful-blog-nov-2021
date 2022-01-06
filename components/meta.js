@@ -40,12 +40,9 @@ export default function Meta() {
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
 
 
-<link href="node_modules/cloudinary-video-player/dist/cld-video-player.min.css" rel="stylesheet" />
-
-<script src="node_modules/lodash/lodash.js" type="text/javascript"></script>
-<script src="node_modules/cloudinary-core/cloudinary-core.js" type="text/javascript"></script>
-<script src="node_modules/cloudinary-video-player/dist/cld-video-player.min.js" type="text/javascript"></script>
-
+<link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css" rel="stylesheet" />
+<script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js" type="text/javascript"></script>
 
       <meta
         name="description"
