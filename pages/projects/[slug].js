@@ -1,49 +1,43 @@
-import { useRouter } from 'next/router'
-import Head from 'next/head'
-import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import MoreStories from '../../components/more-stories'
+import { useRouter } from 'next/router';
+import Head from 'next/head';
+import ErrorPage from 'next/error';
+import Container from '../../components/container';
+import PostBody from '../../components/post-body';
+import MoreStories from '../../components/more-stories';
 //import Header from '../../components/header'
-import PostDescription from '../../components/post-description'
-import SectionSeparator from '../../components/section-separator'
-import Layout from '../../components/layout'
-import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
+import PostDescription from '../../components/post-description';
+import SectionSeparator from '../../components/section-separator';
+import Layout from '../../components/layout';
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
+import PostTitle from '../../components/post-title';
 //import { CMS_NAME } from '../../lib/constants'
-import Navbar from '../../components/navbar'
-import PostVideo from '../../components/post-video'
-
+import Navbar from '../../components/navbar';
+import PostVideo from '../../components/post-video';
 
 export default function Post({ post, morePosts, preview }) {
-  const router = useRouter()
+  const router = useRouter();
 
   if (!router.isFallback && !post) {
-    return <ErrorPage statusCode={404} />
+    return <ErrorPage statusCode={404} />;
   }
 
   return (
     <Layout preview={preview}>
-
-<PostVideo
-                title={post.title}
-                coverImage={post.coverImage}
-                video={post.video ?? post.coverImage}
-              />
-              <Navbar />
-
+      <PostVideo
+        title={post.title}
+        coverImage={post.coverImage}
+        // video={post.video ?? post.coverImage}
+      />
+      <Navbar />
 
       <Container>
-
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
             <article>
               <Head>
-                <title>
-                  {post.title} | Annaga Productions
-                </title>
+                <title>{post.title} | Annaga Productions</title>
                 <meta property="og:image" content={post.coverImage.url} />
               </Head>
               <PostDescription
@@ -63,11 +57,11 @@ export default function Post({ post, morePosts, preview }) {
         )}
       </Container>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps({ params, preview = false }) {
-  const data = await getPostAndMorePosts(params.slug, preview)
+  const data = await getPostAndMorePosts(params.slug, preview);
 
   return {
     props: {
@@ -75,13 +69,13 @@ export async function getStaticProps({ params, preview = false }) {
       post: data?.post ?? null,
       morePosts: data?.morePosts ?? null,
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
-  const allPosts = await getAllPostsWithSlug()
+  const allPosts = await getAllPostsWithSlug();
   return {
     paths: allPosts?.map(({ slug }) => `/projects/${slug}`) ?? [],
     fallback: true,
-  }
+  };
 }
