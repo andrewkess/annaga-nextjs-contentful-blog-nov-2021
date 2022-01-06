@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-const contentfulLoader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&fm=avif&q=${quality || 75}`
+const contentfulLoader = ({ src, quality }) => {
+  return `${src}?fm=avif&q=${quality || 75}`
 }
 
 const ContentfulImage = (props) => {
@@ -9,3 +9,4 @@ const ContentfulImage = (props) => {
 }
 
 export default ContentfulImage
+

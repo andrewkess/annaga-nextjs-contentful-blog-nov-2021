@@ -1,8 +1,6 @@
 // import Avatar from '../components/avatar'
 // import CoverImage from '../components/cover-image'
-// import ProjectImage from '../components/project-image'
-
-
+import ProjectImage from '../components/project-image'
 
 
 // //hack to calculate the actual browser window height on mobile and save that value in the 'vh' variable which can be used later in CSS
@@ -20,6 +18,7 @@
 //   }
 
 
+
 export default function PostVideo({ title, coverImage, video }) {
     //console.log(video);
     return (
@@ -35,15 +34,7 @@ export default function PostVideo({ title, coverImage, video }) {
   }}
 >
     
-{coverImage && 
-
-<img
-src={coverImage.url}
-alt={title}
-className="w-full h-full object-center object-cover"
-/>
-
-}
+{coverImage && <ProjectImage url={coverImage.url} title={title} />}
 
 </div>
 </div>
