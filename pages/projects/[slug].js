@@ -23,12 +23,12 @@ export default function Post({ post, morePosts, preview }) {
 
   return (
     <Layout preview={preview}>
-      <PostVideo
+      {/* <PostVideo
         title={post.title}
         coverImage={post.coverImage}
         // video={post.video ?? post.coverImage}
       />
-      <Navbar />
+      <Navbar /> */}
 
       <Container>
         {router.isFallback ? (
