@@ -28,8 +28,7 @@ export default function Post({ post, morePosts, preview }) {
 <PostVideo
                 title={post.title}
                 coverImage={post.coverImage}
-                author={post.author}
-                video={post.video}
+                video={post.video? post.video : null}
               />
               <Navbar />
 
