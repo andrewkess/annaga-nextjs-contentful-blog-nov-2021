@@ -10,10 +10,10 @@ export default function Contact() {
     <>
       <Layout>
         <Head>
-          <title>Contact with {CMS_NAME}</title>
+          <title>Contact Annaga Productions</title>
         </Head>
         <Navbar />
-          <ContactBar />
+          {/* <ContactBar /> */}
       </Layout>
     </>
   )
