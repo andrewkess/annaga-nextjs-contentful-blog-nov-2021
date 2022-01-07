@@ -23,8 +23,7 @@ export default function Post({ post, morePosts, preview }) {
   }
 
 
-// need to do something to reduce number if screen is smaller
-//  const morePosts = allPosts.slice(1)
+
 
 
   return (
@@ -61,7 +60,13 @@ export default function Post({ post, morePosts, preview }) {
             <Container>
 
             <SectionSeparator />
-            {morePosts && morePosts.length > 0 && (
+            { 
+            // need to do something to reduce number if screen is smaller
+  //const morePosts = allPosts.slice(1)
+            
+            }
+
+{     morePosts && morePosts.length > 0 && (
               <MoreStories posts={morePosts} />
             )}
               </Container>

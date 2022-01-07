@@ -109,7 +109,7 @@ class Carousel extends Component {
                         {slide.title}
                         <FaAngleDoubleRight
                           onClick={this.prevSlide}
-                          className="hidden md:inline text-4xl sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 group-hover:text-white"
+                          className="hidden lg:inline text-4xl sm:text-5xl md:text-6xl lg:text-7xl ml-4 sm:ml-6 md:ml-6 leading-none text-white text-opacity-25 group-hover:text-white"
                         />
                       </div>
 
