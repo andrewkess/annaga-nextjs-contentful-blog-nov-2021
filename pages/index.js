@@ -11,19 +11,19 @@ import MoreStories from '../components/more-stories'
 
 
 
-// //hack to calculate the actual browser window height on mobile and save that value in the 'vh' variable which can be used later in CSS
-// if (typeof window !== "undefined") {
-//   // browser code
+//hack to calculate the actual browser window height on mobile and save that value in the 'vh' variable which can be used later in CSS
+if (typeof window !== "undefined") {
+  // browser code
 
-//   function appHeight() {
-//       const doc = document.documentElement
-//       doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
-//     }
+  function appHeight() {
+      const doc = document.documentElement
+      doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
+    }
   
-//     window.addEventListener('resize', appHeight);
-//     appHeight();
+    window.addEventListener('resize', appHeight);
+    appHeight();
 
-// }
+}
 
 
 export default function Index({ preview, allPosts }) {
@@ -36,7 +36,7 @@ export default function Index({ preview, allPosts }) {
         <Head>
           <title>Annaga Productions</title>
         </Head>
-        {/* <Carousel /> */}
+        <Carousel />
         <Navbar />
         <Container>
           {allPosts.length > 0 && <MoreStories posts={allPosts} />}

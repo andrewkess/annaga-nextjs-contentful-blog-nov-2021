@@ -13,7 +13,7 @@ export default function Contact() {
           <title>Contact Annaga Productions</title>
         </Head>
         <Navbar />
-          {/* <ContactBar /> */}
+          <ContactBar />
       </Layout>
     </>
   )

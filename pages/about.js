@@ -13,7 +13,7 @@ export default function AboutPage() {
           <title>About Annaga Productions</title>
         </Head>
         <Navbar />
-          {/* <AboutBar /> */}
+          <AboutBar />
       </Layout>
     </>
   )
