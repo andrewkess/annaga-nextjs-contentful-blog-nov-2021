@@ -1,24 +1,13 @@
-// import Container from './container'
-// import { EXAMPLE_PATH } from '../lib/constants'
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
-
-
-
-
-
-export default function Team() {
+export default function Thanks() {
 
   return (
     <>
 
-
-
-
     <div className="bg-gray-100">
       <div className="mx-auto">
         <div className="relative shadow-xl">
-          <h2 className="sr-only">Contact us</h2>
+          <h2 className="sr-only">Thanks</h2>
 
           <div className="grid grid-cols-1">
             {/* Contact information */}
