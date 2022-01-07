@@ -38,10 +38,10 @@ export default function Index({ preview, allPosts }) {
         </Head>
         {/* <Carousel /> */}
         <Navbar />
-        <Container>
+        {/* <Container>
           {allPosts.length > 0 && <MoreStories posts={allPosts} />}
           <hr className="border-accent-2 mt-12" />
-          </Container>
+          </Container> */}
       </Layout>
     </>
   )
