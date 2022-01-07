@@ -22,6 +22,11 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />;
   }
 
+
+// need to do something to reduce number if screen is smaller
+//  const morePosts = allPosts.slice(1)
+
+
   return (
     <Layout preview={preview}>
      
