@@ -36,7 +36,7 @@ export default function Index({ preview, allPosts }) {
         <Head>
           <title>Annaga Productions</title>
         </Head>
-        <Carousel />
+        {/* <Carousel /> */}
         <Navbar />
         <Container>
           {allPosts.length > 0 && <MoreStories posts={allPosts} />}
