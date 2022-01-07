@@ -49,7 +49,7 @@ setModifiedTitle(modified);
 
   return (
     <><Link href={`/projects/${slug}`}><a href="/" aria-label="Project page">
-    <div className=" aspect-w-2 aspect-h-3">
+    <div className="relative">
     <CoverImage title={title} url={coverImage.url} />
 
     <div className="z-10 py-6 text-white/90 hover:text-white/100 absolute inset-x-0 bottom-0  hover:bg-black hover:bg-opacity-20">
