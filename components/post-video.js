@@ -13,8 +13,8 @@ export default function PostVideo({ title, coverImage }) {
           className="w-screen flex overflow-hidden relative"
           style={{
             height:
-              '70vh' /* Fallback for browsers that do not support Custom Properties */,
-            height: 'calc(var(--vh, 1vh) * 70)',
+              '60vh' /* Fallback for browsers that do not support Custom Properties */,
+            height: 'calc(var(--vh, 1vh) * 60)',
           }}
         >
 

@@ -46,15 +46,15 @@ export default function Post({ post, morePosts, preview }) {
         // video={post?.video}
       />
        <Navbar /> 
-       {/* <Container>
+       <Container>
 
               <PostDescription
-                title={post.title}
+                title={post.title.toUpperCase()}
                 date={post.date}
               />
 
               <PostBody content={post.content} />
-              </Container> */}
+              </Container>
 
             </article>
             <Container>
