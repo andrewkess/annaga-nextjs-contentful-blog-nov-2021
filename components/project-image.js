@@ -7,7 +7,7 @@ export default function CoverImage({ title, url, slug }) {
     <ContentfulImage
       // resize={ { width: 100, height: 100 } } 
       alt={title}
-      className={cn('block w-screen h-full object-cover')}
+      className={cn('block w-screen object-cover')}
       src={url}
       layout="fill"
       objectFit="cover"

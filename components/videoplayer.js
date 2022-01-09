@@ -4,7 +4,7 @@ const VideoPlayer = () => {
   const videoRef = useRef();
   return (
     <CloudinaryContext cloud_name="annaga" secure="true">
-      <div className="lg:px-24 bg-main-primary/50">
+      <div className="lg:px-24 bg-black">
         <Video
           publicId="videos/leah-optimized_kso72j"
           width="100%"
