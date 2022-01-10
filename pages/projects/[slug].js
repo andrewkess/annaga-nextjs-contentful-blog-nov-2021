@@ -3,10 +3,9 @@ import Head from 'next/head';
 import ErrorPage from 'next/error';
 import Container from '../../components/container';
 import PostBody from '../../components/post-body';
-import MoreStories from '../../components/more-stories';
+import MoreStoriesPostPage from '../../components/more-stories-post-page';
 //import Header from '../../components/header'
 import PostDescription from '../../components/post-description';
-import SectionSeparator from '../../components/section-separator';
 import Layout from '../../components/layout';
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api';
 import PostTitle from '../../components/post-title';
@@ -14,6 +13,11 @@ import PostTitle from '../../components/post-title';
 import Navbar from '../../components/navbar';
 import PostVideo from '../../components/post-video';
 //import Script from 'next/script'
+import ProjectStatus from '../../components/project-status';
+import ProjectDirector from '../../components/project-director';
+import ProjectSummary from '../../components/project-summary';
+
+
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
@@ -48,18 +52,17 @@ export default function Post({ post, morePosts, preview }) {
        <Navbar /> 
        <Container>
 
-              <PostDescription
-                title={post.title.toUpperCase()}
-                date={post.date}
-              />
+              <PostDescription title={post.title.toUpperCase()} date={post.date} />
+              {post.summary && <ProjectSummary summary={post.summary} />}
+              {post.director && <ProjectDirector director={post.director} />}
+              {post.status && <ProjectStatus status={post.status} />}
 
-              <PostBody content={post.content} />
               </Container>
 
             </article>
             <Container>
 
-            <SectionSeparator />
+            <hr className="border-accent-2 mt-12" />
             { 
             // need to do something to reduce number if screen is smaller
   //const morePosts = allPosts.slice(1)
@@ -67,7 +70,7 @@ export default function Post({ post, morePosts, preview }) {
             }
 
 {     morePosts && morePosts.length > 0 && (
-              <MoreStories posts={morePosts} />
+              <MoreStoriesPostPage posts={morePosts} />
             )}
               </Container>
 
