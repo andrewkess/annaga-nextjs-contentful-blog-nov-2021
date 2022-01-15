@@ -37,7 +37,7 @@ export default function Index({ preview, allPosts }) {
           <title>Annaga Productions</title>
         </Head>
         <Carousel />
-        {/* <Navbar /> */}
+        <Navbar />
         <Container>
           {allPosts.length > 0 && <MoreStories posts={allPosts} />}
           <hr className="border-accent-2 mt-12" />
