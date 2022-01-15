@@ -5,7 +5,7 @@ export default function MoreStories2({ posts }) {
     <section>
               <div className="relative">
 
-      <h2 className="mt-8 mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
+      <h2 className="mt-8 mb-8 text-4xl md:text-6xl text-gray-800 tracking-tighter leading-tight ">
         Latest projects
       </h2>
       <div className="grid gap-6 md:gap-12 lg:gap-12 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32">

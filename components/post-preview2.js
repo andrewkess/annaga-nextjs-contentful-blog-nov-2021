@@ -50,14 +50,13 @@ setModifiedTitle(modified);
 
   return (
     <>
-    <div className={index==2 && `hidden lg:inline`}><Link href={`/projects/${slug}`}><a href="/" aria-label="Project page">
+    <div className={index==2 ? `hidden lg:inline` : undefined}><Link href={`/projects/${slug}`}><a href="/" aria-label="Project page">
     <div className="relative aspect-w-2 aspect-h-3">
     <CoverImage title={title} url={coverImage.url} />
 
     <div className="z-10 py-6 text-white/90 hover:text-white/100 absolute inset-x-0 bottom-0  hover:bg-black hover:bg-opacity-20">
       <div className="absolute flex flex-wrap sm:flex-nowrap justify-between items-end inset-x-0 bottom-0 leading-none bg-gradient-to-b from-transparent to-black
-      text-3xl sm:text-6xl 2xl:text-7xl p-2 sm:p-4 lg:p-6 drop-shadow-lg tracking-tight md:tracking-normal
-      "
+      text-3xl sm:text-6xl 2xl:text-7xl p-2 sm:p-4 lg:p-6 drop-shadow-lg tracking-tight md:tracking-normal"
       style={{
         fontFamily: "'Rubik', sans-serif",
       }} >

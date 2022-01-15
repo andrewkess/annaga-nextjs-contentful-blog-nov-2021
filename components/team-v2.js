@@ -57,7 +57,7 @@ export default function Team() {
 
 
 
-    <div className="min-h-screen">
+    <div className="min-h-screen mb-8">
       <div className="mx-auto">
         <div className="relative shadow-xl">
           <h2 className="sr-only">Contact us</h2>
