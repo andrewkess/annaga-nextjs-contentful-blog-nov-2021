@@ -25,7 +25,7 @@ let titleArr = title.toUpperCase().split(' ');
 
 //Add hyphen for words => 9 characters
 titleArr.forEach((word,i,arr) => {
-  if(word.length>=9){
+  if(word.length>=10){
     //console.log('long word:', word);
     arr[i] = word.slice(0, 5) + "-" + word.slice(5);
   }
@@ -53,7 +53,7 @@ setModifiedTitle(modified);
     <CoverImage title={title} url={coverImage.url} />
 
     <div className="z-10 py-6 text-white/90 hover:text-white/100 absolute inset-x-0 bottom-0  hover:bg-black hover:bg-opacity-20">
-      <div className="absolute flex flex-wrap sm:flex-nowrap justify-between items-end inset-x-0 bottom-0 leading-none bg-gradient-to-b from-transparent to-black
+      <div className="absolute flex flex-wrap justify-between items-end inset-x-0 bottom-0 leading-none bg-gradient-to-b from-transparent to-black
       text-3xl sm:text-6xl 2xl:text-7xl p-2 sm:p-4 lg:p-6 drop-shadow-lg tracking-tight md:tracking-normal
       "
       style={{

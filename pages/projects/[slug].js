@@ -40,7 +40,7 @@ export default function Post({ post, morePosts, preview }) {
 
             <article>
               <Head>
-                <title>{post.title} | Annaga Productions</title>
+                <title>{post.title} · Annaga Productions</title>
                 <meta property="og:image" content={post.coverImage.url} />
               </Head>
 
