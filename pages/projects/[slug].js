@@ -72,6 +72,8 @@ export default function Post({ post, morePosts, preview }) {
 {     morePosts && morePosts.length > 0 && (
               <MoreStoriesPostPage posts={morePosts} />
             )}
+                        <hr className="border-accent-2 mt-12" />
+
               </Container>
 
           </>
