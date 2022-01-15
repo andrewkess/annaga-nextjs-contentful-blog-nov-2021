@@ -4,11 +4,18 @@ import ProjectImage from '../components/project-image'
 import VideoPlayer from '../components/videoplayer'
 
 
-export default function PostVideo({ title, coverImage }) {
-    //console.log(video);
+export default function PostVideo({ title, coverImage, video }) {
+    // console.log(video[0].public_id);
     return (
     <>
-      <div className="m-0">
+      
+{/* <div>Video: { video && video[0].url }</div> */}
+
+{/* If there is a video, we show it, otherwise display the coverimage instead */}
+
+{video ? <VideoPlayer video={video[0].public_id} /> : 
+
+<div className="m-0">
       <div
           className="w-screen flex overflow-hidden relative"
           style={{
@@ -22,8 +29,11 @@ export default function PostVideo({ title, coverImage }) {
 {coverImage && <ProjectImage url={coverImage.url} title={title} />}
 </div>
 </div>
-{/* <div>Video: { video && video[0].url }</div> */}
-{/* <VideoPlayer /> */}
+
+
+
+
+}
 
        </>
   )
