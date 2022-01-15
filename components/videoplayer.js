@@ -5,12 +5,13 @@ const VideoPlayer = ({video}) => {
   const videoRef = useRef();
   return (
     <CloudinaryContext cloud_name="annaga" secure="true">
-      <div className="lg:px-24 bg-black">
+      <div className="bg-black">
         <Video
           publicId={video}
           width="100%"
           controls
           innerRef={videoRef}
+          className="max-h-[45rem] object-cover"
         />
       </div>
     </CloudinaryContext>
