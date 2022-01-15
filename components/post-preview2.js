@@ -26,7 +26,7 @@ let titleArr = title.toUpperCase().split(' ');
 
 //Add hyphen for words => 9 characters
 titleArr.forEach((word,i,arr) => {
-  if(word.length>=9){
+  if(word.length>=10){
     //console.log('long word:', word);
     arr[i] = word.slice(0, 5) + "-" + word.slice(5);
   }
