@@ -48,6 +48,7 @@ export default function Navbar() {
               <div className="flex-1 flex items-center justify-start sm:items-stretch sm:justify-between">
                 <div className="flex-shrink-0 flex items-center z-50">
                   <a href="/" key="testwindow"><img
+                  width="160px" height="30px"
                     className="block h-[30px] w-[160px] sm:h-[40px] sm:w-[200px]"
                     src="https://res.cloudinary.com/annaga/image/upload/v1636486534/annaga-logo_du1dlj.png"
                     alt="Annaga"
