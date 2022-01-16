@@ -5,6 +5,7 @@ const contentfulLoader = ({ src, width, quality }) => {
 }
 
 const ContentfulImage = (props) => {
+  console.log(props)
   return <Image loader={contentfulLoader} {...props} />
 }
 
