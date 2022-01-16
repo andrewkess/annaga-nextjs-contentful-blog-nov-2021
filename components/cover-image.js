@@ -5,8 +5,8 @@ import cn from 'classnames'
 export default function CoverImage({ title, url, slug }) {
   const image = (
     <ContentfulImage
-      width="520"
-      height={780}
+      width={300}
+      height={450}
       // layout="fill"
       // objectFit="cover"
       //  resize={ { width: 520, height: 780 } } 
