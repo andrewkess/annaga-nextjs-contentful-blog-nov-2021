@@ -9,8 +9,6 @@ export default function PostPreview({
   title,
   coverImage,
   date,
-  excerpt,
-  author,
   slug,
 }) {
 
@@ -57,7 +55,7 @@ setModifiedTitle(modified);
       text-3xl sm:text-6xl 2xl:text-7xl p-2 sm:p-4 lg:p-6 drop-shadow-lg tracking-tight md:tracking-normal
       "
       style={{
-        fontFamily: "'Rubik', sans-serif",
+        fontFamily: "'Rubik', sans-serif"
       }} >
         
     <div>{modifiedTitle}</div> 

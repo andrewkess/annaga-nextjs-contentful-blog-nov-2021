@@ -11,7 +11,7 @@ export default function CoverImage({ title, url, slug }) {
       // objectFit="cover"
       //  resize={ { width: 520, height: 780 } } 
       alt={`Cover Image for ${title}`}
-      className={cn('shadow-small object-cover', {
+      className={cn('object-cover ', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
       src={url}
