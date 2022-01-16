@@ -1,4 +1,4 @@
-import AboutBar from '../components/team-v2'
+import JobsBar from '../components/jobs'
 import Navbar from '../components/navbar'
 import Layout from '../components/layout'
 import Head from 'next/head'
@@ -13,7 +13,7 @@ export default function JobsPage() {
           <title>Jobs · Annaga Productions</title>
         </Head>
         <Navbar />
-          <AboutBar />
+          <JobsBar />
       </Layout>
     </>
   )
