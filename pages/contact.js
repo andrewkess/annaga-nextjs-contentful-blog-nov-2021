@@ -10,7 +10,7 @@ export default function Contact() {
     <>
       <Layout>
         <Head>
-          <title>Contact Annaga Productions</title>
+          <title>Contact Us · Annaga Productions</title>
         </Head>
         <Navbar />
           <ContactBar />

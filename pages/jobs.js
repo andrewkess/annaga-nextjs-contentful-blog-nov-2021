@@ -4,13 +4,13 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 
-export default function AboutPage() {
+export default function JobsPage() {
 
     return (
     <>
       <Layout>
         <Head>
-          <title>About Us · Annaga Productions</title>
+          <title>Jobs · Annaga Productions</title>
         </Head>
         <Navbar />
           <AboutBar />
