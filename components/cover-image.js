@@ -5,9 +5,9 @@ import cn from 'classnames'
 export default function CoverImage({ title, url, slug }) {
   const image = (
     <ContentfulImage
-      // width={300}
-      // height={450}
-      layout="fill"
+      width={400}
+      height={600}
+      // layout="fill"
       // objectFit="cover"
       //  resize={ { width: 520, height: 780 } } 
       alt={`Cover Image for ${title}`}
