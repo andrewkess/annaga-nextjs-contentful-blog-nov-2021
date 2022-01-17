@@ -141,7 +141,7 @@ export default function Jobs() {
         <div className="text-xl">Job responsibilities</div>
 
 
-<ul class="list-disc list-inside">
+<ul className="list-disc list-inside">
 <li> Assist in the production of long and short form content</li>
 <li> Log and archive short form content and internal presentations</li>
 <li> Edit video clips of integrated content as necessary and upload to company website</li>
@@ -152,7 +152,7 @@ export default function Jobs() {
 
 <div className="text-xl">Qualifications and skills</div>
 
-<ul class="list-disc list-inside">
+<ul className="list-disc list-inside">
 <li>Strong television or film production background</li>
 <li>Editing abilities</li>
 <li>Project management</li>
@@ -164,7 +164,7 @@ export default function Jobs() {
 
 <div className="text-xl">Education and experience requirements</div>
 
-<ul class="list-disc list-inside">
+<ul className="list-disc list-inside">
 <li>Bachelor's or master's degree in Film, Communications, Advertising, or related field</li>
 <li>1-3 years of television or film production experience</li>
 <li>Knowledge of Final Cut Pro or similar editing software</li>
