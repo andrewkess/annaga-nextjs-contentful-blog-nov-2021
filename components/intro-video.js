@@ -17,7 +17,7 @@ const IntroVideoPlayer = () => {
         <Video
           publicId="somalia334-22_ydcx5z_gz7t4x"
           width="100%"
-          controls={true}
+          controls={false}
         //   autoPlay={true}
 autoPlay
         loop={true}
