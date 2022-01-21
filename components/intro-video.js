@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Video, CloudinaryContext, Transformation } from "cloudinary-react";
+import { Video, CloudinaryContext } from "cloudinary-react";
 
 const IntroVideoPlayer = () => {
   // console.log(video)
@@ -8,18 +8,15 @@ const IntroVideoPlayer = () => {
     <CloudinaryContext cloud_name="annaga" secure="true">
       <div className="bg-black">
         <Video
-          publicId="somalia334-22_ydcx5z"
+          publicId="somalia334-22_ydcx5z_gz7t4x"
           width="100%"
-          controls={false}
-        
-autoPlay={true}
-loop
+          controls={true}
+          autoPlay={true}
+          loop={true}
         innerRef={videoRef}
           className="max-h-[45rem] object-cover"
-        >
-         <Transformation audioCodec="none" videoCodec="h264" />
-         </Video>
-          </div>
+        />
+           </div>
     </CloudinaryContext>
   );
 };
