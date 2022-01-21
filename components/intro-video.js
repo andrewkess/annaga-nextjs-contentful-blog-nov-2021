@@ -13,17 +13,17 @@ const IntroVideoPlayer = () => {
             height: 'calc(var(--vh, 1vh) * 100)',
           }}
         >
-            <CloudinaryContext cloud_name="annaga" secure="true">
+            <CloudinaryContext cloud_name="annaga" secure="true" autoPlay>
         <Video
           publicId="somalia334-22_ydcx5z_gz7t4x"
           width="100%"
           controls={true}
-          autoPlay={true}
-          loop={true}
+        //   autoPlay={true}
+autoPlay
+        loop={true}
         innerRef={videoRef}
           className="h-screen w-screen object-cover"
         />
-
     </CloudinaryContext>
     </div>
   );
