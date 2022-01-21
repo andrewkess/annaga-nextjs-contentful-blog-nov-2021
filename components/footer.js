@@ -2,7 +2,7 @@
 // import { EXAMPLE_PATH } from '../lib/constants'
 //import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 
-import { FaVimeoV } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
 import { TiSocialInstagram } from 'react-icons/ti';
 import { VscTwitter } from 'react-icons/vsc';
 import Link from 'next/link';
@@ -18,7 +18,7 @@ export default function Footer() {
     social: [
       {
         name: 'Instagram',
-        href: '#',
+        href: 'https://www.instagram.com/annagacom/',
         icon: (props) => <TiSocialInstagram />,
       },
       {
@@ -27,9 +27,9 @@ export default function Footer() {
         icon: (props) => <VscTwitter />,
       },
       {
-        name: 'Vimeo',
-        href: '#',
-        icon: (props) => <FaVimeoV />,
+        name: 'YouTube',
+        href: 'https://www.youtube.com/channel/UCAaeHqgWahn7on_PuTR6sNw',
+        icon: (props) => <FaYoutube />,
       },
     ],
   };
