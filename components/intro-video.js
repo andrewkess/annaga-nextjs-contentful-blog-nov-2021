@@ -5,8 +5,15 @@ const IntroVideoPlayer = () => {
   // console.log(video)
   const videoRef = useRef();
   return (
-    <CloudinaryContext cloud_name="annaga" secure="true">
-      <div className="bg-black">
+    <div
+          className="w-screen h-screen h-max-full flex overflow-hidden relative"
+          style={{
+            height:
+              '100vh' /* Fallback for browsers that do not support Custom Properties */,
+            height: 'calc(var(--vh, 1vh) * 100)',
+          }}
+        >
+            <CloudinaryContext cloud_name="annaga" secure="true">
         <Video
           publicId="somalia334-22_ydcx5z_gz7t4x"
           width="100%"
@@ -14,10 +21,11 @@ const IntroVideoPlayer = () => {
           autoPlay={true}
           loop={true}
         innerRef={videoRef}
-          className="max-h-[45rem] object-cover"
+          className="h-screen w-screen object-cover"
         />
-           </div>
+
     </CloudinaryContext>
+    </div>
   );
 };
 export default IntroVideoPlayer;
