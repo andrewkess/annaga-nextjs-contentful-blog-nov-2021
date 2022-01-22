@@ -11,7 +11,7 @@ export default function Footer() {
   const navigation = {
     main: [
       { name: 'About', href: '/about' },
-      { name: 'Projects', href: '/projects' },
+      // { name: 'Projects', href: '/projects' },
       { name: 'Jobs', href: '/jobs' },
       { name: 'Contact', href: '/contact' },
     ],
